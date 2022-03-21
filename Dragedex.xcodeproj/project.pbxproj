@@ -16,6 +16,11 @@
 		2DC306F727E90E100061D641 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DC306F527E90E100061D641 /* LaunchScreen.storyboard */; };
 		2DC3070227E90E100061D641 /* DragedexTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC3070127E90E100061D641 /* DragedexTests.swift */; };
 		2DC3070D27E90E100061D641 /* DragedexUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC3070C27E90E100061D641 /* DragedexUITests.swift */; };
+		2DC3072727E911E50061D641 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC3072627E911E50061D641 /* MainTabBarController.swift */; };
+		2DC3072D27E914090061D641 /* QueenDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC3072B27E914090061D641 /* QueenDetailsViewController.swift */; };
+		2DC3072E27E914090061D641 /* QueenDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2DC3072C27E914090061D641 /* QueenDetailsViewController.xib */; };
+		2DC3073427E91AEE0061D641 /* SeasonsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC3073227E91AEE0061D641 /* SeasonsViewController.swift */; };
+		2DC3073527E91AEE0061D641 /* SeasonsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2DC3073327E91AEE0061D641 /* SeasonsViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +56,11 @@
 		2DC3070827E90E100061D641 /* DragedexUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DragedexUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DC3070C27E90E100061D641 /* DragedexUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragedexUITests.swift; sourceTree = "<group>"; };
 		2DC3070E27E90E100061D641 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2DC3072627E911E50061D641 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		2DC3072B27E914090061D641 /* QueenDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueenDetailsViewController.swift; sourceTree = "<group>"; };
+		2DC3072C27E914090061D641 /* QueenDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QueenDetailsViewController.xib; sourceTree = "<group>"; };
+		2DC3073227E91AEE0061D641 /* SeasonsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonsViewController.swift; sourceTree = "<group>"; };
+		2DC3073327E91AEE0061D641 /* SeasonsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SeasonsViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +111,12 @@
 		2DC306E627E90E100061D641 /* Dragedex */ = {
 			isa = PBXGroup;
 			children = (
+				2DC3073927E91B040061D641 /* Controllers */,
 				2DC306E727E90E100061D641 /* AppDelegate.swift */,
 				2DC306E927E90E100061D641 /* SceneDelegate.swift */,
 				2DC306EB27E90E100061D641 /* ViewController.swift */,
 				2DC306ED27E90E100061D641 /* Main.storyboard */,
+				2DC3072627E911E50061D641 /* MainTabBarController.swift */,
 				2DC306F327E90E100061D641 /* Assets.xcassets */,
 				2DC306F527E90E100061D641 /* LaunchScreen.storyboard */,
 				2DC306F827E90E100061D641 /* Info.plist */,
@@ -129,6 +141,17 @@
 				2DC3070E27E90E100061D641 /* Info.plist */,
 			);
 			path = DragedexUITests;
+			sourceTree = "<group>";
+		};
+		2DC3073927E91B040061D641 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2DC3072B27E914090061D641 /* QueenDetailsViewController.swift */,
+				2DC3072C27E914090061D641 /* QueenDetailsViewController.xib */,
+				2DC3073227E91AEE0061D641 /* SeasonsViewController.swift */,
+				2DC3073327E91AEE0061D641 /* SeasonsViewController.xib */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,6 +259,8 @@
 			files = (
 				2DC306F727E90E100061D641 /* LaunchScreen.storyboard in Resources */,
 				2DC306F427E90E100061D641 /* Assets.xcassets in Resources */,
+				2DC3073527E91AEE0061D641 /* SeasonsViewController.xib in Resources */,
+				2DC3072E27E914090061D641 /* QueenDetailsViewController.xib in Resources */,
 				2DC306EF27E90E100061D641 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -262,8 +287,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				2DC306EC27E90E100061D641 /* ViewController.swift in Sources */,
+				2DC3073427E91AEE0061D641 /* SeasonsViewController.swift in Sources */,
 				2DC306F227E90E100061D641 /* Dragedex.xcdatamodeld in Sources */,
+				2DC3072727E911E50061D641 /* MainTabBarController.swift in Sources */,
 				2DC306E827E90E100061D641 /* AppDelegate.swift in Sources */,
+				2DC3072D27E914090061D641 /* QueenDetailsViewController.swift in Sources */,
 				2DC306EA27E90E100061D641 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -450,7 +478,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = xyz.Dragedex;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -469,7 +497,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = xyz.Dragedex;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
