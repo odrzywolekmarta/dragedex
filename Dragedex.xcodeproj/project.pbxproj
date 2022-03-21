@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D33108027E9212D00A2021A /* QueenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D33107F27E9212D00A2021A /* QueenModel.swift */; };
+		2D33108527E926ED00A2021A /* TestQueen.json in Sources */ = {isa = PBXBuildFile; fileRef = 2D33108427E926ED00A2021A /* TestQueen.json */; };
+		2D86E4D327E91F4200646382 /* FavouritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D86E4D127E91F4200646382 /* FavouritesViewController.swift */; };
+		2D86E4D427E91F4200646382 /* FavouritesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D86E4D227E91F4200646382 /* FavouritesViewController.xib */; };
 		2DC306E827E90E100061D641 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC306E727E90E100061D641 /* AppDelegate.swift */; };
 		2DC306EA27E90E100061D641 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC306E927E90E100061D641 /* SceneDelegate.swift */; };
 		2DC306EC27E90E100061D641 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC306EB27E90E100061D641 /* ViewController.swift */; };
@@ -41,6 +45,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2D33107F27E9212D00A2021A /* QueenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueenModel.swift; sourceTree = "<group>"; };
+		2D33108427E926ED00A2021A /* TestQueen.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = TestQueen.json; sourceTree = "<group>"; };
+		2D86E4D127E91F4200646382 /* FavouritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesViewController.swift; sourceTree = "<group>"; };
+		2D86E4D227E91F4200646382 /* FavouritesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavouritesViewController.xib; sourceTree = "<group>"; };
 		2DC306E427E90E100061D641 /* Dragedex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dragedex.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DC306E727E90E100061D641 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2DC306E927E90E100061D641 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -88,6 +96,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2D33107E27E9211300A2021A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2D33107F27E9212D00A2021A /* QueenModel.swift */,
+				2D33108427E926ED00A2021A /* TestQueen.json */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		2DC306DB27E90E100061D641 = {
 			isa = PBXGroup;
 			children = (
@@ -111,6 +128,7 @@
 		2DC306E627E90E100061D641 /* Dragedex */ = {
 			isa = PBXGroup;
 			children = (
+				2D33107E27E9211300A2021A /* Models */,
 				2DC3073927E91B040061D641 /* Controllers */,
 				2DC306E727E90E100061D641 /* AppDelegate.swift */,
 				2DC306E927E90E100061D641 /* SceneDelegate.swift */,
@@ -150,6 +168,8 @@
 				2DC3072C27E914090061D641 /* QueenDetailsViewController.xib */,
 				2DC3073227E91AEE0061D641 /* SeasonsViewController.swift */,
 				2DC3073327E91AEE0061D641 /* SeasonsViewController.xib */,
+				2D86E4D127E91F4200646382 /* FavouritesViewController.swift */,
+				2D86E4D227E91F4200646382 /* FavouritesViewController.xib */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -259,6 +279,7 @@
 			files = (
 				2DC306F727E90E100061D641 /* LaunchScreen.storyboard in Resources */,
 				2DC306F427E90E100061D641 /* Assets.xcassets in Resources */,
+				2D86E4D427E91F4200646382 /* FavouritesViewController.xib in Resources */,
 				2DC3073527E91AEE0061D641 /* SeasonsViewController.xib in Resources */,
 				2DC3072E27E914090061D641 /* QueenDetailsViewController.xib in Resources */,
 				2DC306EF27E90E100061D641 /* Main.storyboard in Resources */,
@@ -286,8 +307,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D33108027E9212D00A2021A /* QueenModel.swift in Sources */,
+				2D86E4D327E91F4200646382 /* FavouritesViewController.swift in Sources */,
 				2DC306EC27E90E100061D641 /* ViewController.swift in Sources */,
 				2DC3073427E91AEE0061D641 /* SeasonsViewController.swift in Sources */,
+				2D33108527E926ED00A2021A /* TestQueen.json in Sources */,
 				2DC306F227E90E100061D641 /* Dragedex.xcdatamodeld in Sources */,
 				2DC3072727E911E50061D641 /* MainTabBarController.swift in Sources */,
 				2DC306E827E90E100061D641 /* AppDelegate.swift in Sources */,

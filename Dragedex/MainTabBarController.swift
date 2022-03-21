@@ -22,7 +22,11 @@ class MainTabBarController: UITabBarController {
         let seasonsController = SeasonsViewController(nibName: String(describing:SeasonsViewController.self),
                                                       bundle: nil)
         let seasonsNavigationController = UINavigationController(rootViewController: seasonsController)
-        viewControllers = [queensNavigationController, seasonsNavigationController]
+        let favouritesController = FavouritesViewController(nibName: String(describing: FavouritesViewController.self),
+                                                            bundle: nil)
+        let favouritesNavigationController = UINavigationController(rootViewController: favouritesController)
+        
+        viewControllers = [queensNavigationController, seasonsNavigationController, favouritesController]
         
     }
 }

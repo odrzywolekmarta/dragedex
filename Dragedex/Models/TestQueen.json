@@ -1,0 +1,318 @@
+{
+   "id":89,
+   "name":"Trixie Mattel",
+   "winner":true,
+   "missCongeniality":false,
+   "image_url":"http://www.nokeynoshade.party/images/trixie-mattel.jpg",
+   "quote":"Alright, Public school, calm down.",
+   "challenges":[
+      {
+         "id":136,
+         "type":"mini",
+         "description":"Model 2 looks; one for Spring and one for Fall.",
+         "won":false
+      },
+      {
+         "id":137,
+         "type":"main",
+         "description":"Create a resort-wear tearaway to reveal a nude illusion. (Mini Challenge was part of the Main Challenge)",
+         "won":false
+      },
+      {
+         "id":138,
+         "type":"main",
+         "description":"Create a resort-wear tearaway to reveal a nude illusion. (Mini Challenge was part of the Main Challenge)",
+         "won":false
+      },
+      {
+         "id":139,
+         "type":"mini",
+         "description":"Keep fish face as the Pit Crew blow jets of air into the queens faces",
+         "won":true
+      },
+      {
+         "id":140,
+         "type":"main",
+         "description":"Produce a pre-flight safety video for the first airline run by drag queens",
+         "won":false
+      },
+      {
+         "id":141,
+         "type":"mini",
+         "description":"Soul Train dance-off in granny drag",
+         "won":false
+      },
+      {
+         "id":142,
+         "type":"main",
+         "description":"\"Hamlet it up\" in two twisted Shakespeare classics – Romy and Juliet and MacBitch",
+         "won":false
+      },
+      {
+         "id":143,
+         "type":"main",
+         "description":"Create a music video parody by writing lyrics, and doing vocals to a RuPaul song.",
+         "won":false
+      },
+      {
+         "id":144,
+         "type":"mini",
+         "description":"Make their own paper versions of classic celebrity red carpet outfits, working in pairs assigned by Ru",
+         "won":false
+      },
+      {
+         "id":145,
+         "type":"main",
+         "description":"Come up with funny banter and take jabs at the other queens while presenting awards for different categories at the first ever DESPY Awards.",
+         "won":false
+      },
+      {
+         "id":150,
+         "type":"main",
+         "description":"Create a conjoined twin makeover with a previously eliminated queen",
+         "won":true
+      },
+      {
+         "id":151,
+         "type":"mini",
+         "description":"Reading is Fundamental",
+         "won":true
+      },
+      {
+         "id":152,
+         "type":"main",
+         "description":"Musical versions of John Waters' most iconic films",
+         "won":false
+      },
+      {
+         "id":153,
+         "type":"mini",
+         "description":"Create a \"Fake Housewives of Drag Race\" look using tape.",
+         "won":false
+      },
+      {
+         "id":154,
+         "type":"main",
+         "description":"Dancing in a live drag dance spectacular",
+         "won":false
+      },
+      {
+         "id":205,
+         "type":"main",
+         "description":"all-stars snatch game",
+         "won":false
+      },
+      {
+         "id":206,
+         "type":"mini",
+         "description":"The queens pose for a photo that will be turned into a pop art portrait",
+         "won":false
+      },
+      {
+         "id":207,
+         "type":"main",
+         "description":"The queens design wearable soup cans inspired by Andy Warhol, and create Studio 54 disco looks.",
+         "won":true
+      },
+      {
+         "id":208,
+         "type":"main",
+         "description":"The queens audition for RuPaul's new girl group, the Kitty Girls. The eliminated queens return and have a competing girl group.",
+         "won":false
+      },
+      {
+         "id":209,
+         "type":"main",
+         "description":"The queens’ acting chops are tested in a girl comedy blockbuster scene",
+         "won":false
+      },
+      {
+         "id":200,
+         "type":"main",
+         "description":"The queens go full diva in a lip-syncing dance number inspired by the classic TV specials \"VH1 Divas Live\"",
+         "won":false
+      },
+      {
+         "id":199,
+         "type":"main",
+         "description":"all-stars variety show",
+         "won":false
+      },
+      {
+         "id":198,
+         "type":"mini",
+         "description":"reading is fundamental",
+         "won":false
+      },
+      {
+         "id":201,
+         "type":"main",
+         "description":"The queens' improvisation skills are tested in an unscripted dating show",
+         "won":false
+      },
+      {
+         "id":210,
+         "type":"main",
+         "description":"Write, sing, and dance in an ambitious production number to RuPaul's song \"Kitty Girl\"",
+         "won":false
+      }
+   ],
+   "episodes":[
+      {
+         "id":95,
+         "seasonId":8,
+         "episodeInSeason":1,
+         "title":"Born Naked",
+         "airDate":"2015-03-02"
+      },
+      {
+         "id":96,
+         "seasonId":8,
+         "episodeInSeason":2,
+         "title":"Glamazonian Airways",
+         "airDate":"2015-03-09"
+      },
+      {
+         "id":97,
+         "seasonId":8,
+         "episodeInSeason":3,
+         "title":"Shakesqueer",
+         "airDate":"2015-03-16"
+      },
+      {
+         "id":98,
+         "seasonId":8,
+         "episodeInSeason":4,
+         "title":"Spoof! There it is",
+         "airDate":"2015-03-23"
+      },
+      {
+         "id":102,
+         "seasonId":8,
+         "episodeInSeason":8,
+         "title":"Conjoined Queens",
+         "airDate":"2015-04-20"
+      },
+      {
+         "id":103,
+         "seasonId":8,
+         "episodeInSeason":9,
+         "title":"Divine Inspiration",
+         "airDate":"2015-04-27"
+      },
+      {
+         "id":104,
+         "seasonId":8,
+         "episodeInSeason":10,
+         "title":"Prancing Queens",
+         "airDate":"2015-05-04"
+      },
+      {
+         "id":108,
+         "seasonId":8,
+         "episodeInSeason":14,
+         "title":"The Grand Finale",
+         "airDate":"2015-05-25"
+      },
+      {
+         "id":151,
+         "seasonId":12,
+         "episodeInSeason":5,
+         "title":"Pop Art Ball",
+         "airDate":"2018-02-22"
+      },
+      {
+         "id":154,
+         "seasonId":12,
+         "episodeInSeason":8,
+         "title":"A Jury of Your Queers",
+         "airDate":"2018-03-15"
+      },
+      {
+         "id":144,
+         "seasonId":12,
+         "episodeInSeason":2,
+         "title":"Divas Lip Sync Live",
+         "airDate":"2018-02-01"
+      },
+      {
+         "id":143,
+         "seasonId":12,
+         "episodeInSeason":1,
+         "title":"All-Star Variety Show",
+         "airDate":"2018-01-25"
+      },
+      {
+         "id":145,
+         "seasonId":12,
+         "episodeInSeason":3,
+         "title":"The Bitchelor",
+         "airDate":"2018-02-08"
+      },
+      {
+         "id":150,
+         "seasonId":12,
+         "episodeInSeason":4,
+         "title":"All Stars Snatch Game",
+         "airDate":"2018-02-15"
+      },
+      {
+         "id":152,
+         "seasonId":12,
+         "episodeInSeason":6,
+         "title":"Handmaids to Kitty Girls",
+         "airDate":"2018-03-01"
+      },
+      {
+         "id":153,
+         "seasonId":12,
+         "episodeInSeason":7,
+         "title":"My Best Squirrelfriend's Dragsmaids Wedding Trip",
+         "airDate":"2018-03-08"
+      }
+   ],
+   "lipsyncs":[
+      {
+         "id":76,
+         "won":false,
+         "name":"Dreaming",
+         "artist":"Blondie"
+      },
+      {
+         "id":82,
+         "won":false,
+         "name":"Show Me Love",
+         "artist":"Robin S"
+      },
+      {
+         "id":121,
+         "won":false,
+         "name":"The Boss",
+         "artist":"Diana Ross"
+      },
+      {
+         "id":123,
+         "won":false,
+         "name":"Freaky Money",
+         "artist":"RuPaul"
+      },
+      {
+         "id":124,
+         "won":true,
+         "name":"Wrecking Ball",
+         "artist":"Miley Cyrus"
+      }
+   ],
+   "seasons":[
+      {
+         "seasonNumber":"7",
+         "id":8,
+         "place":6
+      },
+      {
+         "seasonNumber":"A3",
+         "id":12,
+         "place":1
+      }
+   ]
+}
