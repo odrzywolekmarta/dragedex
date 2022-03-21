@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2D33108027E9212D00A2021A /* QueenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D33107F27E9212D00A2021A /* QueenModel.swift */; };
 		2D33108527E926ED00A2021A /* TestQueen.json in Sources */ = {isa = PBXBuildFile; fileRef = 2D33108427E926ED00A2021A /* TestQueen.json */; };
+		2D33108C27E9293B00A2021A /* TestQueen.json in Resources */ = {isa = PBXBuildFile; fileRef = 2D33108427E926ED00A2021A /* TestQueen.json */; };
 		2D86E4D327E91F4200646382 /* FavouritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D86E4D127E91F4200646382 /* FavouritesViewController.swift */; };
 		2D86E4D427E91F4200646382 /* FavouritesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D86E4D227E91F4200646382 /* FavouritesViewController.xib */; };
 		2DC306E827E90E100061D641 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC306E727E90E100061D641 /* AppDelegate.swift */; };
@@ -277,6 +278,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D33108C27E9293B00A2021A /* TestQueen.json in Resources */,
 				2DC306F727E90E100061D641 /* LaunchScreen.storyboard in Resources */,
 				2DC306F427E90E100061D641 /* Assets.xcassets in Resources */,
 				2D86E4D427E91F4200646382 /* FavouritesViewController.xib in Resources */,

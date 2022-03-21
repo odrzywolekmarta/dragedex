@@ -18,19 +18,6 @@ struct QueenModel: Decodable {
     let episodes: [EpisodeModel]
     let challenges: [ChallengeModel]
     let lipsyncs: [LipSyncModel]
-    
-    private enum CodingKeys: String, CodingKey {
-        case id
-        case name
-        case winner
-        case missCongeniality
-        case quote
-        case imageUrl = "image_url"
-        case seasons
-        case episodes
-        case challenges
-        case lipsyncs
-    }
 }
 
 struct SeasonModel: Decodable {
