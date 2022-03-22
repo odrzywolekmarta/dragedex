@@ -11,27 +11,9 @@ import CoreData
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-    func loadJson() throws {
-        guard let path = Bundle.main.url(forResource: "TestQueen", withExtension: "json") else {
-            fatalError()
-        }
-        let data = try Data(contentsOf: path)
-        let dictionary = try JSONSerialization.jsonObject(with: data, options: .allowFragments) as? [String: Any]
-        let jsonData = try JSONSerialization.data(withJSONObject: dictionary, options: .fragmentsAllowed)
-        let decoder = JSONDecoder()
-        decoder.keyDecodingStrategy = .convertFromSnakeCase
-        let model = try decoder.decode(QueenModel.self, from: jsonData)
-       // print(model)
-    }
+    
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        
-        do {
-            try loadJson()
-        } catch {
-            print(error)
-        }
-        
         return true
     }
 

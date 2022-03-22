@@ -18,6 +18,7 @@ class MainTabBarController: UITabBarController {
     func configureControllers() {
         let queensController = QueenDetailsViewController(nibName: String(describing: QueenDetailsViewController.self),
                                                           bundle: nil)
+        queensController.viewModel = MockQueenDetailsViewModel()
         let queensNavigationController = UINavigationController(rootViewController: queensController)
         
         let seasonsController = SeasonsViewController(nibName: String(describing:SeasonsViewController.self),

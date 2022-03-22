@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,8 @@
 		2D33108527E926ED00A2021A /* TestQueen.json in Sources */ = {isa = PBXBuildFile; fileRef = 2D33108427E926ED00A2021A /* TestQueen.json */; };
 		2D33108C27E9293B00A2021A /* TestQueen.json in Resources */ = {isa = PBXBuildFile; fileRef = 2D33108427E926ED00A2021A /* TestQueen.json */; };
 		2D33109127EA3A8400A2021A /* TabBarItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D33109027EA3A8400A2021A /* TabBarItems.swift */; };
+		2D33109927EA4AA400A2021A /* MockQueenDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D33109827EA4AA400A2021A /* MockQueenDetailsViewModel.swift */; };
+		2D3310A227EA553800A2021A /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 2D3310A127EA553800A2021A /* SDWebImage */; };
 		2D86E4D327E91F4200646382 /* FavouritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D86E4D127E91F4200646382 /* FavouritesViewController.swift */; };
 		2D86E4D427E91F4200646382 /* FavouritesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D86E4D227E91F4200646382 /* FavouritesViewController.xib */; };
 		2DC306E827E90E100061D641 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC306E727E90E100061D641 /* AppDelegate.swift */; };
@@ -50,6 +52,7 @@
 		2D33107F27E9212D00A2021A /* QueenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueenModel.swift; sourceTree = "<group>"; };
 		2D33108427E926ED00A2021A /* TestQueen.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = TestQueen.json; sourceTree = "<group>"; };
 		2D33109027EA3A8400A2021A /* TabBarItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItems.swift; sourceTree = "<group>"; };
+		2D33109827EA4AA400A2021A /* MockQueenDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockQueenDetailsViewModel.swift; sourceTree = "<group>"; };
 		2D86E4D127E91F4200646382 /* FavouritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesViewController.swift; sourceTree = "<group>"; };
 		2D86E4D227E91F4200646382 /* FavouritesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavouritesViewController.xib; sourceTree = "<group>"; };
 		2DC306E427E90E100061D641 /* Dragedex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dragedex.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -79,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D3310A227EA553800A2021A /* SDWebImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -174,6 +178,7 @@
 				2DC3073327E91AEE0061D641 /* SeasonsViewController.xib */,
 				2D86E4D127E91F4200646382 /* FavouritesViewController.swift */,
 				2D86E4D227E91F4200646382 /* FavouritesViewController.xib */,
+				2D33109827EA4AA400A2021A /* MockQueenDetailsViewModel.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -194,6 +199,9 @@
 			dependencies = (
 			);
 			name = Dragedex;
+			packageProductDependencies = (
+				2D3310A127EA553800A2021A /* SDWebImage */,
+			);
 			productName = Dragedex;
 			productReference = 2DC306E427E90E100061D641 /* Dragedex.app */;
 			productType = "com.apple.product-type.application";
@@ -265,6 +273,9 @@
 				Base,
 			);
 			mainGroup = 2DC306DB27E90E100061D641;
+			packageReferences = (
+				2D3310A027EA553800A2021A /* XCRemoteSwiftPackageReference "SDWebImage" */,
+			);
 			productRefGroup = 2DC306E527E90E100061D641 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -316,6 +327,7 @@
 				2D86E4D327E91F4200646382 /* FavouritesViewController.swift in Sources */,
 				2DC306EC27E90E100061D641 /* ViewController.swift in Sources */,
 				2DC3073427E91AEE0061D641 /* SeasonsViewController.swift in Sources */,
+				2D33109927EA4AA400A2021A /* MockQueenDetailsViewModel.swift in Sources */,
 				2D33108527E926ED00A2021A /* TestQueen.json in Sources */,
 				2DC306F227E90E100061D641 /* Dragedex.xcdatamodeld in Sources */,
 				2DC3072727E911E50061D641 /* MainTabBarController.swift in Sources */,
@@ -655,6 +667,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2D3310A027EA553800A2021A /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.12.5;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2D3310A127EA553800A2021A /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2D3310A027EA553800A2021A /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		2DC306F027E90E100061D641 /* Dragedex.xcdatamodeld */ = {

@@ -21,6 +21,7 @@ struct QueenModel: Decodable {
 }
 
 struct SeasonModel: Decodable {
+    let seasonNumber: String
     let id: Int
     let place: Int
 }
