@@ -17,7 +17,5 @@ class FavouritesViewController: UIViewController {
     
     func doConfiguration() {
         view.backgroundColor = .blue
-        let image = UIImage(systemName: "folder")
-        tabBarItem = UITabBarItem(title: "Favourites", image: image, tag: 2)
     }
 }

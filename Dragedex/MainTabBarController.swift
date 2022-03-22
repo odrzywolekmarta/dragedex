@@ -12,6 +12,7 @@ class MainTabBarController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configureControllers()
+        configureTabBarItems()
     }
     
     func configureControllers() {
@@ -26,7 +27,19 @@ class MainTabBarController: UITabBarController {
                                                             bundle: nil)
         let favouritesNavigationController = UINavigationController(rootViewController: favouritesController)
         
-        viewControllers = [queensNavigationController, seasonsNavigationController, favouritesController]
+        viewControllers = [queensNavigationController, seasonsNavigationController, favouritesNavigationController]
         
+    }
+    
+    func configureTabBarItems() {
+        guard let items = tabBar.items else {
+            return
+        }
+        for (index, tab) in AppTab.allCases.enumerated() {
+            let tabItem = items[index]
+            tabItem.title = tab.rawValue.capitalized
+            tabItem.image = tab.image
+            tabItem.tag = index
+        }
     }
 }

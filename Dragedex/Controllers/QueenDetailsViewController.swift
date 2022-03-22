@@ -17,7 +17,5 @@ class QueenDetailsViewController: UIViewController {
     
     func doConfiguration() {
         view.backgroundColor = .cyan
-        let image = UIImage(systemName: "folder")
-        tabBarItem = UITabBarItem(title: "Queens", image: image, tag: 0)
     }
 }

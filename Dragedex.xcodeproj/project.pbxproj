@@ -10,6 +10,7 @@
 		2D33108027E9212D00A2021A /* QueenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D33107F27E9212D00A2021A /* QueenModel.swift */; };
 		2D33108527E926ED00A2021A /* TestQueen.json in Sources */ = {isa = PBXBuildFile; fileRef = 2D33108427E926ED00A2021A /* TestQueen.json */; };
 		2D33108C27E9293B00A2021A /* TestQueen.json in Resources */ = {isa = PBXBuildFile; fileRef = 2D33108427E926ED00A2021A /* TestQueen.json */; };
+		2D33109127EA3A8400A2021A /* TabBarItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D33109027EA3A8400A2021A /* TabBarItems.swift */; };
 		2D86E4D327E91F4200646382 /* FavouritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D86E4D127E91F4200646382 /* FavouritesViewController.swift */; };
 		2D86E4D427E91F4200646382 /* FavouritesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D86E4D227E91F4200646382 /* FavouritesViewController.xib */; };
 		2DC306E827E90E100061D641 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC306E727E90E100061D641 /* AppDelegate.swift */; };
@@ -48,6 +49,7 @@
 /* Begin PBXFileReference section */
 		2D33107F27E9212D00A2021A /* QueenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueenModel.swift; sourceTree = "<group>"; };
 		2D33108427E926ED00A2021A /* TestQueen.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = TestQueen.json; sourceTree = "<group>"; };
+		2D33109027EA3A8400A2021A /* TabBarItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItems.swift; sourceTree = "<group>"; };
 		2D86E4D127E91F4200646382 /* FavouritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesViewController.swift; sourceTree = "<group>"; };
 		2D86E4D227E91F4200646382 /* FavouritesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavouritesViewController.xib; sourceTree = "<group>"; };
 		2DC306E427E90E100061D641 /* Dragedex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dragedex.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -136,6 +138,7 @@
 				2DC306EB27E90E100061D641 /* ViewController.swift */,
 				2DC306ED27E90E100061D641 /* Main.storyboard */,
 				2DC3072627E911E50061D641 /* MainTabBarController.swift */,
+				2D33109027EA3A8400A2021A /* TabBarItems.swift */,
 				2DC306F327E90E100061D641 /* Assets.xcassets */,
 				2DC306F527E90E100061D641 /* LaunchScreen.storyboard */,
 				2DC306F827E90E100061D641 /* Info.plist */,
@@ -317,6 +320,7 @@
 				2DC306F227E90E100061D641 /* Dragedex.xcdatamodeld in Sources */,
 				2DC3072727E911E50061D641 /* MainTabBarController.swift in Sources */,
 				2DC306E827E90E100061D641 /* AppDelegate.swift in Sources */,
+				2D33109127EA3A8400A2021A /* TabBarItems.swift in Sources */,
 				2DC3072D27E914090061D641 /* QueenDetailsViewController.swift in Sources */,
 				2DC306EA27E90E100061D641 /* SceneDelegate.swift in Sources */,
 			);
