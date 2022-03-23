@@ -7,14 +7,15 @@
 
 import Foundation
 
-class MockQueenDetailsViewModel: QueenDetailsViewModelProtocol {
-    func getQueen(completion: (Result<QueenModel, Error>) -> Void) {
-        do {
-            let provider = MockDataProvider()
-            let queen = try provider.getSampleQueen()
-            completion(Result.success(queen))
-        } catch {
-            completion(Result.failure(error))
-        }
-    }
-}
+//class MockQueenDetailsViewModel: QueenDetailsViewModelProtocol {
+//    var model: QueenModel!
+//    func getAdditionalQueenData(completion: (Result<QueenModel, Error>) -> Void) {
+//        do {
+//            let provider = MockDataProvider()
+//            let queen = try provider.getSampleQueen()
+//            completion(Result.success(queen))
+//        } catch {
+//            completion(Result.failure(error))
+//        }
+//    }
+//}

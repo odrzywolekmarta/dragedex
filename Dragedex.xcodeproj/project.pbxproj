@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D115E0D27EBA87400D8A6B5 /* TabRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D115E0C27EBA87400D8A6B5 /* TabRouter.swift */; };
 		2D33108027E9212D00A2021A /* QueenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D33107F27E9212D00A2021A /* QueenModel.swift */; };
 		2D33108527E926ED00A2021A /* TestQueen.json in Sources */ = {isa = PBXBuildFile; fileRef = 2D33108427E926ED00A2021A /* TestQueen.json */; };
-		2D33108C27E9293B00A2021A /* TestQueen.json in Resources */ = {isa = PBXBuildFile; fileRef = 2D33108427E926ED00A2021A /* TestQueen.json */; };
 		2D33109127EA3A8400A2021A /* TabBarItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D33109027EA3A8400A2021A /* TabBarItems.swift */; };
 		2D33109927EA4AA400A2021A /* MockQueenDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D33109827EA4AA400A2021A /* MockQueenDetailsViewModel.swift */; };
 		2D3310A227EA553800A2021A /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 2D3310A127EA553800A2021A /* SDWebImage */; };
@@ -20,6 +20,8 @@
 		2D3310C827EB82B700A2021A /* SingleQueenTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D3310C627EB82B700A2021A /* SingleQueenTableViewCell.xib */; };
 		2D3310D127EB8D0E00A2021A /* MockDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3310D027EB8D0E00A2021A /* MockDataProvider.swift */; };
 		2D3310D527EB964E00A2021A /* TestAllQueens.json in Resources */ = {isa = PBXBuildFile; fileRef = 2D3310A627EA5B0700A2021A /* TestAllQueens.json */; };
+		2D3310DA27EBA52000A2021A /* MockQueensViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3310D927EBA52000A2021A /* MockQueensViewModel.swift */; };
+		2D55905127EBBCE800FBD152 /* TestQueen.json in Resources */ = {isa = PBXBuildFile; fileRef = 2D33108427E926ED00A2021A /* TestQueen.json */; };
 		2D86E4D327E91F4200646382 /* FavouritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D86E4D127E91F4200646382 /* FavouritesViewController.swift */; };
 		2D86E4D427E91F4200646382 /* FavouritesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D86E4D227E91F4200646382 /* FavouritesViewController.xib */; };
 		2DC306E827E90E100061D641 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC306E727E90E100061D641 /* AppDelegate.swift */; };
@@ -56,6 +58,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2D115E0C27EBA87400D8A6B5 /* TabRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabRouter.swift; sourceTree = "<group>"; };
 		2D33107F27E9212D00A2021A /* QueenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueenModel.swift; sourceTree = "<group>"; };
 		2D33108427E926ED00A2021A /* TestQueen.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = TestQueen.json; sourceTree = "<group>"; };
 		2D33109027EA3A8400A2021A /* TabBarItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItems.swift; sourceTree = "<group>"; };
@@ -66,6 +69,7 @@
 		2D3310C527EB82B700A2021A /* SingleQueenTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleQueenTableViewCell.swift; sourceTree = "<group>"; };
 		2D3310C627EB82B700A2021A /* SingleQueenTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SingleQueenTableViewCell.xib; sourceTree = "<group>"; };
 		2D3310D027EB8D0E00A2021A /* MockDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDataProvider.swift; sourceTree = "<group>"; };
+		2D3310D927EBA52000A2021A /* MockQueensViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockQueensViewModel.swift; sourceTree = "<group>"; };
 		2D86E4D127E91F4200646382 /* FavouritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesViewController.swift; sourceTree = "<group>"; };
 		2D86E4D227E91F4200646382 /* FavouritesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavouritesViewController.xib; sourceTree = "<group>"; };
 		2DC306E427E90E100061D641 /* Dragedex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dragedex.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -116,6 +120,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2D115E0B27EBA83B00D8A6B5 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				2D115E0C27EBA87400D8A6B5 /* TabRouter.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
 		2D33107E27E9211300A2021A /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -128,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				2D33109827EA4AA400A2021A /* MockQueenDetailsViewModel.swift */,
+				2D3310D927EBA52000A2021A /* MockQueensViewModel.swift */,
 				2D33108427E926ED00A2021A /* TestQueen.json */,
 				2D3310A627EA5B0700A2021A /* TestAllQueens.json */,
 				2D3310D027EB8D0E00A2021A /* MockDataProvider.swift */,
@@ -158,6 +171,7 @@
 		2DC306E627E90E100061D641 /* Dragedex */ = {
 			isa = PBXGroup;
 			children = (
+				2D115E0B27EBA83B00D8A6B5 /* Navigation */,
 				2D3310CF27EB8CE600A2021A /* Mocks */,
 				2D33107E27E9211300A2021A /* Models */,
 				2DC3073927E91B040061D641 /* Controllers */,
@@ -165,7 +179,6 @@
 				2DC306E927E90E100061D641 /* SceneDelegate.swift */,
 				2DC306EB27E90E100061D641 /* ViewController.swift */,
 				2DC306ED27E90E100061D641 /* Main.storyboard */,
-				2DC3072627E911E50061D641 /* MainTabBarController.swift */,
 				2D33109027EA3A8400A2021A /* TabBarItems.swift */,
 				2DC306F327E90E100061D641 /* Assets.xcassets */,
 				2DC306F527E90E100061D641 /* LaunchScreen.storyboard */,
@@ -196,6 +209,7 @@
 		2DC3073927E91B040061D641 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				2DC3072627E911E50061D641 /* MainTabBarController.swift */,
 				2D3310B627EB820500A2021A /* QueensTableViewController.swift */,
 				2D3310B727EB820500A2021A /* QueensTableViewController.xib */,
 				2D3310C527EB82B700A2021A /* SingleQueenTableViewCell.swift */,
@@ -319,7 +333,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2D33108C27E9293B00A2021A /* TestQueen.json in Resources */,
+				2D55905127EBBCE800FBD152 /* TestQueen.json in Resources */,
 				2D3310D527EB964E00A2021A /* TestAllQueens.json in Resources */,
 				2D3310C827EB82B700A2021A /* SingleQueenTableViewCell.xib in Resources */,
 				2DC306F727E90E100061D641 /* LaunchScreen.storyboard in Resources */,
@@ -366,6 +380,8 @@
 				2D3310C727EB82B700A2021A /* SingleQueenTableViewCell.swift in Sources */,
 				2DC306E827E90E100061D641 /* AppDelegate.swift in Sources */,
 				2D33109127EA3A8400A2021A /* TabBarItems.swift in Sources */,
+				2D3310DA27EBA52000A2021A /* MockQueensViewModel.swift in Sources */,
+				2D115E0D27EBA87400D8A6B5 /* TabRouter.swift in Sources */,
 				2DC3072D27E914090061D641 /* QueenDetailsViewController.swift in Sources */,
 				2D3310B827EB820500A2021A /* QueensTableViewController.swift in Sources */,
 				2DC306EA27E90E100061D641 /* SceneDelegate.swift in Sources */,

@@ -9,7 +9,17 @@ import UIKit
 import SDWebImage
 
 protocol QueenDetailsViewModelProtocol {
-    func getQueen(completion: (Result<QueenModel, Error>) -> Void)
+    var model: QueenModel { get }
+    func getAdditionalQueenData(completion: (Result<QueenModel, Error>) -> Void)
+}
+
+class QueenDetailsViewModel: QueenDetailsViewModelProtocol {
+    var model: QueenModel
+    init(with model: QueenModel) {
+        self.model = model
+    }
+    func getAdditionalQueenData(completion: (Result<QueenModel, Error>) -> Void) {
+    }
 }
 
 class QueenDetailsViewController: UIViewController {
@@ -24,24 +34,26 @@ class QueenDetailsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         doConfiguration()
-        presentQueenDetails()
     }
     
     func doConfiguration() {
+        if let model = viewModel?.model {
+            updateUI(with: model)
+        }
     }
     
-    func presentQueenDetails() {
-        viewModel?.getQueen { result in
+    func fetchAdditionalQueenData() {
+        viewModel?.getAdditionalQueenData { result in
             switch result {
             case .success(let model):
-                handle(model: model)
+                updateUI(with: model)
             case .failure(let error):
                 handle(error: error)
             }
         }
     }
     
-    func handle(model: QueenModel) {
+    func updateUI(with model: QueenModel) {
         nameLabel.text = model.name
         quoteLabel.text = "\"\(model.quote)\""
         
