@@ -45,20 +45,26 @@ class QueenDetailsViewController: UIViewController {
         nameLabel.text = model.name
         quoteLabel.text = "\"\(model.quote)\""
         
-        let seasonsNumbers = model.seasons.map {
+        if let seasonsNumbers = model.seasons?.map ({
             $0.seasonNumber
-        }.joined(separator: ", ")
-        let seasonsText = "Seasons: \(seasonsNumbers)"
-        seasonsLabel.text = seasonsText
+        }) .joined(separator: ", ") {
+            let seasonsText = "Seasons: \(seasonsNumbers)"
+            seasonsLabel.text = seasonsText
+        } else {
+            seasonsLabel.isHidden = true
+        }
         
-        if model.winner {
-            winnerLabel.text = "Winner"
+        if let wonSeason = model.seasons?.first(where: {$0.place == 1}) {
+            winnerLabel.text = "\(wonSeason.seasonNumber) winner"
         } else {
             winnerLabel.isHidden = true
         }
-
-        queensImageView.sd_setImage(with: URL(string: model.imageUrl),
-                                    placeholderImage: nil)
+        
+        if let urlString = model.imageUrl {
+            queensImageView.sd_setImage(with: URL(string: urlString),
+                                        placeholderImage: nil)
+        }
+        
     }
     
     func handle(error: Error) {

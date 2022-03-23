@@ -13,11 +13,11 @@ struct QueenModel: Decodable {
     let winner: Bool
     let missCongeniality: Bool
     let quote: String
-    let imageUrl: String
-    let seasons: [SeasonModel]
-    let episodes: [EpisodeModel]
-    let challenges: [ChallengeModel]
-    let lipsyncs: [LipSyncModel]
+    let imageUrl: String?
+    let seasons: [SeasonModel]?
+    let episodes: [EpisodeModel]?
+    let challenges: [ChallengeModel]?
+    let lipsyncs: [LipSyncModel]?
 }
 
 struct SeasonModel: Decodable {

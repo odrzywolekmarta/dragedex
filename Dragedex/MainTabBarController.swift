@@ -16,12 +16,12 @@ class MainTabBarController: UITabBarController {
     }
     
     func configureControllers() {
-        let queensController = QueenDetailsViewController(nibName: String(describing: QueenDetailsViewController.self),
+        let queensController = QueensTableViewController(nibName: String(describing: QueensTableViewController.self),
                                                           bundle: nil)
-        queensController.viewModel = MockQueenDetailsViewModel()
+        queensController.viewModel = MockQueensViewModel()
         let queensNavigationController = UINavigationController(rootViewController: queensController)
         
-        let seasonsController = SeasonsViewController(nibName: String(describing:SeasonsViewController.self),
+        let seasonsController = SeasonsViewController(nibName: String(describing: SeasonsViewController.self),
                                                       bundle: nil)
         let seasonsNavigationController = UINavigationController(rootViewController: seasonsController)
         let favouritesController = FavouritesViewController(nibName: String(describing: FavouritesViewController.self),
