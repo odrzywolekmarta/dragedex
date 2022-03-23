@@ -45,11 +45,8 @@ class QueenDetailsViewController: UIViewController {
         nameLabel.text = model.name
         quoteLabel.text = "\"\(model.quote)\""
         
-        if let seasonsNumbers = model.seasons?.map ({
-            $0.seasonNumber
-        }) .joined(separator: ", ") {
-            let seasonsText = "Seasons: \(seasonsNumbers)"
-            seasonsLabel.text = seasonsText
+        if let seasonsNumbers = model.seasonsDescription {
+            seasonsLabel.text = seasonsNumbers
         } else {
             seasonsLabel.isHidden = true
         }

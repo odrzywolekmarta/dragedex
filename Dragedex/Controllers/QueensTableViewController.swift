@@ -58,11 +58,13 @@ class QueensTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: "SingleQueenTableViewCell", for: indexPath) as? SingleQueenTableViewCell {
-            // configure
+            if let dataSource = viewModel?.dataSource {
+                let model = dataSource[indexPath.row]
+                cell.configure(with: model)
+            }
             return cell
         }
-
-        // Configure the cell...
+        
 
         return SingleQueenTableViewCell()
     }

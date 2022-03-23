@@ -18,6 +18,15 @@ struct QueenModel: Decodable {
     let episodes: [EpisodeModel]?
     let challenges: [ChallengeModel]?
     let lipsyncs: [LipSyncModel]?
+    var seasonsDescription: String? {
+        guard let seasonNumbers = seasons?.map ({
+            $0.seasonNumber
+        }) .joined(separator: ", ") else {
+            return nil
+        }
+        let seasonsText = "Seasons: \(seasonNumbers)"
+        return seasonsText
+    }
 }
 
 struct SeasonModel: Decodable {
