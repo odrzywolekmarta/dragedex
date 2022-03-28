@@ -14,7 +14,7 @@ struct QueenModel: Decodable {
     let missCongeniality: Bool
     let quote: String
     let imageUrl: String?
-    let seasons: [SeasonModel]?
+    let seasons: [SeasonForQueenModel]?
     let episodes: [EpisodeModel]?
     let challenges: [ChallengeModel]?
     let lipsyncs: [LipSyncModel]?
@@ -29,10 +29,54 @@ struct QueenModel: Decodable {
     }
 }
 
-struct SeasonModel: Decodable {
+struct SeasonForQueenModel: Decodable {
     let seasonNumber: String
     let id: Int
     let place: Int
+}
+
+struct MiniQueenModel: Decodable {
+    
+    enum ContextSpecificValue: Decodable {
+        
+        private enum CodingKeys: String, CodingKey {
+            case place
+            case won
+        }
+        
+        enum ContextSpecificValueError: Error {
+            case couldNotParse
+        }
+        
+        init(from decoder: Decoder) throws {
+            let values = try decoder.container(keyedBy: CodingKeys.self)
+            if let value = try? values.decode(Int.self, forKey: .place) {
+                self = .season(place: value)
+                return
+            } else if let value = try? values.decode(Bool.self, forKey: .won) {
+                self = .winnableEvent(won: value)
+                return
+            } else {
+                throw ContextSpecificValueError.couldNotParse
+            }
+        }
+        
+        case season(place: Int)
+        case winnableEvent(won: Bool)
+    }
+    
+    let id: Int
+    let name: String
+    let value: ContextSpecificValue
+}
+
+struct SeasonModel: Decodable {
+    let id: Int
+    let seasonNumber: String
+    let winnerId: Int
+    let imageUrl: String
+    let queens: [MiniQueenModel]
+    
 }
 
 struct EpisodeModel: Decodable {

@@ -9,7 +9,7 @@ import UIKit
 
 protocol TabRouterProtocol {
     func pushQueenDetails(with model: QueenModel)
-    func pushSeasonDetails(with model: SeasonModel)
+    func pushSeasonDetails(with model: SeasonForQueenModel)
     func pushEpisodeDetails(with model: EpisodeModel)
     func pushSeasonsList()
 }
@@ -27,7 +27,7 @@ class TabRouter: TabRouterProtocol {
         navigationController.pushViewController(queensController, animated: true)
     }
     
-    func pushSeasonDetails(with model: SeasonModel) {
+    func pushSeasonDetails(with model: SeasonForQueenModel) {
     }
     
     func pushEpisodeDetails(with model: EpisodeModel) {

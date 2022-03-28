@@ -148,6 +148,17 @@
 			path = Mocks;
 			sourceTree = "<group>";
 		};
+		2D55905B27F237D000FBD152 /* QueensList */ = {
+			isa = PBXGroup;
+			children = (
+				2D3310B627EB820500A2021A /* QueensTableViewController.swift */,
+				2D3310B727EB820500A2021A /* QueensTableViewController.xib */,
+				2D3310C527EB82B700A2021A /* SingleQueenTableViewCell.swift */,
+				2D3310C627EB82B700A2021A /* SingleQueenTableViewCell.xib */,
+			);
+			path = QueensList;
+			sourceTree = "<group>";
+		};
 		2DC306DB27E90E100061D641 = {
 			isa = PBXGroup;
 			children = (
@@ -209,11 +220,8 @@
 		2DC3073927E91B040061D641 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				2D55905B27F237D000FBD152 /* QueensList */,
 				2DC3072627E911E50061D641 /* MainTabBarController.swift */,
-				2D3310B627EB820500A2021A /* QueensTableViewController.swift */,
-				2D3310B727EB820500A2021A /* QueensTableViewController.xib */,
-				2D3310C527EB82B700A2021A /* SingleQueenTableViewCell.swift */,
-				2D3310C627EB82B700A2021A /* SingleQueenTableViewCell.xib */,
 				2DC3072B27E914090061D641 /* QueenDetailsViewController.swift */,
 				2DC3072C27E914090061D641 /* QueenDetailsViewController.xib */,
 				2DC3073227E91AEE0061D641 /* SeasonsViewController.swift */,

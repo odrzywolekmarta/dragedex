@@ -17,7 +17,8 @@ class QueensTableViewController: UITableViewController {
     let viewModel: QueensViewModelProtocol
     let router: TabRouterProtocol
     
-    init(viewModel: QueensViewModelProtocol, router: TabRouterProtocol) {
+    init(viewModel: QueensViewModelProtocol,
+         router: TabRouterProtocol) {
         self.viewModel = viewModel
         self.router = router
         super.init(nibName: String(describing: QueensTableViewController.self), bundle: nil)
@@ -57,7 +58,8 @@ class QueensTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if let cell = tableView.dequeueReusableCell(withIdentifier: "SingleQueenTableViewCell", for: indexPath) as? SingleQueenTableViewCell {
+        if let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: SingleQueenTableViewCell.self),
+                                                    for: indexPath) as? SingleQueenTableViewCell {
             cell.configure(with: viewModel.dataSource[indexPath.row])
             return cell
         }
