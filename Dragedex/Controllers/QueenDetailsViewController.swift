@@ -29,21 +29,26 @@ class QueenDetailsViewController: UIViewController {
     @IBOutlet var seasonsLabel: UILabel!
     @IBOutlet var winnerLabel: UILabel!
     
-    var viewModel: QueenDetailsViewModelProtocol?
+    let viewModel: QueenDetailsViewModelProtocol
+    init(viewModel: QueenDetailsViewModelProtocol) {
+        self.viewModel = viewModel
+        super.init(nibName: String(describing: QueenDetailsViewController.self), bundle: nil)
+    }
     
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         doConfiguration()
     }
     
     func doConfiguration() {
-        if let model = viewModel?.model {
-            updateUI(with: model)
-        }
+        updateUI(with: viewModel.model)
     }
     
     func fetchAdditionalQueenData() {
-        viewModel?.getAdditionalQueenData { result in
+        viewModel.getAdditionalQueenData { result in
             switch result {
             case .success(let model):
                 updateUI(with: model)

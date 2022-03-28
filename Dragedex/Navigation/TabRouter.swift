@@ -22,17 +22,9 @@ class TabRouter: TabRouterProtocol {
     }
     
     func pushQueenDetails(with model: QueenModel) {
-        do {
-            let viewModel = QueenDetailsViewModel(with: model)
-            let queensController = QueenDetailsViewController(nibName: String(describing: QueenDetailsViewController.self),
-                                                              bundle: nil)
-            queensController.viewModel = viewModel
-            navigationController.pushViewController(queensController, animated: true)
-        } catch {
-            print(error)
-            fatalError()
-        }
-
+        let viewModel = QueenDetailsViewModel(with: model)
+        let queensController = QueenDetailsViewController(viewModel: viewModel)
+        navigationController.pushViewController(queensController, animated: true)
     }
     
     func pushSeasonDetails(with model: SeasonModel) {
