@@ -41,4 +41,11 @@ struct MockDataProvider {
         decoder.keyDecodingStrategy = .convertFromSnakeCase
         return try decoder.decode([QueenModel].self, from: jsonData)
     }
+    
+    func getAllSeasons() throws -> [SeasonModel] {
+        let jsonData = try loadJsonDictionaryArray(name: "TestAllSeasons")
+        let decoder = JSONDecoder()
+        decoder.keyDecodingStrategy = .convertFromSnakeCase
+        return try decoder.decode([SeasonModel].self, from: jsonData)
+    }
 }

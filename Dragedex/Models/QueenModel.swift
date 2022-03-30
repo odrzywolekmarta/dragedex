@@ -37,43 +37,40 @@ struct SeasonForQueenModel: Decodable {
 
 struct MiniQueenModel: Decodable {
     
-    enum ContextSpecificValue: Decodable {
-        
-        private enum CodingKeys: String, CodingKey {
-            case place
-            case won
-        }
-        
-        enum ContextSpecificValueError: Error {
-            case couldNotParse
-        }
-        
-        init(from decoder: Decoder) throws {
-            let values = try decoder.container(keyedBy: CodingKeys.self)
-            if let value = try? values.decode(Int.self, forKey: .place) {
-                self = .season(place: value)
-                return
-            } else if let value = try? values.decode(Bool.self, forKey: .won) {
-                self = .winnableEvent(won: value)
-                return
-            } else {
-                throw ContextSpecificValueError.couldNotParse
-            }
-        }
-        
+    enum ContextSpecificValue {
         case season(place: Int)
         case winnableEvent(won: Bool)
     }
     
     let id: Int
     let name: String
-    let value: ContextSpecificValue
+    let value: ContextSpecificValue?
+    
+    private enum CodingKeys: String, CodingKey {
+        case id
+        case name
+        case won
+        case place
+    }
+    
+    init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        self.id = try container.decode(Int.self, forKey: .id)
+        self.name = try container.decode(String.self, forKey: .name)
+        if let won = try? container.decode(Bool.self, forKey: .won) {
+            self.value = .winnableEvent(won: won)
+        } else if let place = try? container.decode(Int.self, forKey: .place) {
+            self.value = .season(place: place)
+        } else {
+            value = nil
+        }
+    }
 }
 
 struct SeasonModel: Decodable {
     let id: Int
     let seasonNumber: String
-    let winnerId: Int
+    let winnerId: Int?
     let imageUrl: String
     let queens: [MiniQueenModel]
     

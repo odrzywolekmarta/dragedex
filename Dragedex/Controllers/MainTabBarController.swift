@@ -22,9 +22,13 @@ class MainTabBarController: UITabBarController {
         let queensController = QueensTableViewController(viewModel: queensViewModel, router: queensTabRouter)
         queensNavigationController.setViewControllers([queensController], animated: false)
         
-        let seasonsController = SeasonsViewController(nibName: String(describing: SeasonsViewController.self),
-                                                      bundle: nil)
-        let seasonsNavigationController = UINavigationController(rootViewController: seasonsController)
+        let seasonsViewModel = MockSeasonsViewModel()
+        let seasonsNavigationController = UINavigationController()
+        let seasonsTabRouter = TabRouter(navigationController: seasonsNavigationController)
+        let seasonsController = SeasonsTableViewController(viewmodel: seasonsViewModel,
+                                                           router: seasonsTabRouter)
+        seasonsNavigationController.setViewControllers([seasonsController], animated: false)
+        
         let favouritesController = FavouritesViewController(nibName: String(describing: FavouritesViewController.self),
                                                             bundle: nil)
         let favouritesNavigationController = UINavigationController(rootViewController: favouritesController)
