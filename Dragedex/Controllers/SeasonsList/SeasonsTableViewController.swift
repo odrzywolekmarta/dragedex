@@ -8,8 +8,13 @@
 import UIKit
 
 protocol SeasonsViewModelProtocol {
-    var dataSource: [SeasonModel] {get}
+    var dataSource: [SeasonSection] { get }
     func updateDataSource()
+}
+
+struct SeasonSection {
+    let title: String
+    let array: [SeasonModel]
 }
 
 class SeasonsTableViewController: UITableViewController {
@@ -17,7 +22,8 @@ class SeasonsTableViewController: UITableViewController {
     let viewModel: SeasonsViewModelProtocol
     let router: TabRouterProtocol
     
-    init(viewmodel: SeasonsViewModelProtocol, router: TabRouterProtocol) {
+    init(viewmodel: SeasonsViewModelProtocol,
+         router: TabRouterProtocol) {
         self.viewModel = viewmodel
         self.router = router
         super.init(nibName: String(describing: SeasonsTableViewController.self), bundle: nil)
@@ -35,6 +41,7 @@ class SeasonsTableViewController: UITableViewController {
     
     func reloadData() {
         viewModel.updateDataSource()
+        tableView.reloadData()
     }
     
     func configureTableView() {
@@ -45,26 +52,27 @@ class SeasonsTableViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
+        viewModel.dataSource.count
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return viewModel.dataSource.count
+        viewModel.dataSource[section].array.count
     }
-
+    
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        viewModel.dataSource[section].title
+    }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: SingleSeasonTableViewCell.self), for: indexPath) as? SingleSeasonTableViewCell {
-            cell.configure(with: viewModel.dataSource[indexPath.row])
+            let section = viewModel.dataSource[indexPath.section]
+            let model = section.array[indexPath.row]
+            cell.configure(with: model)
             return cell
         }
         return SingleSeasonTableViewCell()
     }
     
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        router.pushSeasonsList()
-    }
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {

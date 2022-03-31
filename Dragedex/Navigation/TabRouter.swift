@@ -11,7 +11,7 @@ protocol TabRouterProtocol {
     func pushQueenDetails(with model: QueenModel)
     func pushSeasonDetails(with model: SeasonForQueenModel)
     func pushEpisodeDetails(with model: EpisodeModel)
-    func pushSeasonsList()
+    func pushSeasonsList(with model: SeasonModel)
 }
 
 class TabRouter: TabRouterProtocol {
@@ -33,7 +33,7 @@ class TabRouter: TabRouterProtocol {
     func pushEpisodeDetails(with model: EpisodeModel) {
     }
     
-    func pushSeasonsList() {
+    func pushSeasonsList(with model: SeasonModel) {
     }
     
     
