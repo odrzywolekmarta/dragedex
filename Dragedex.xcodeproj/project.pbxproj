@@ -29,6 +29,7 @@
 		2D55908427F4BFEA00FBD152 /* SeasonsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D55908227F4BFEA00FBD152 /* SeasonsTableViewController.swift */; };
 		2D55908527F4BFEA00FBD152 /* SeasonsTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D55908327F4BFEA00FBD152 /* SeasonsTableViewController.xib */; };
 		2D55908D27F4D25B00FBD152 /* MockSeasonsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D55908C27F4D25B00FBD152 /* MockSeasonsViewModel.swift */; };
+		2D55909827F61C7A00FBD152 /* ActivityPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D55909727F61C7A00FBD152 /* ActivityPresentable.swift */; };
 		2D86E4D327E91F4200646382 /* FavouritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D86E4D127E91F4200646382 /* FavouritesViewController.swift */; };
 		2D86E4D427E91F4200646382 /* FavouritesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D86E4D227E91F4200646382 /* FavouritesViewController.xib */; };
 		2DC306E827E90E100061D641 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC306E727E90E100061D641 /* AppDelegate.swift */; };
@@ -81,6 +82,7 @@
 		2D55908227F4BFEA00FBD152 /* SeasonsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonsTableViewController.swift; sourceTree = "<group>"; };
 		2D55908327F4BFEA00FBD152 /* SeasonsTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SeasonsTableViewController.xib; sourceTree = "<group>"; };
 		2D55908C27F4D25B00FBD152 /* MockSeasonsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSeasonsViewModel.swift; sourceTree = "<group>"; };
+		2D55909727F61C7A00FBD152 /* ActivityPresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityPresentable.swift; sourceTree = "<group>"; };
 		2D86E4D127E91F4200646382 /* FavouritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesViewController.swift; sourceTree = "<group>"; };
 		2D86E4D227E91F4200646382 /* FavouritesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavouritesViewController.xib; sourceTree = "<group>"; };
 		2DC306E427E90E100061D641 /* Dragedex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dragedex.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -204,6 +206,7 @@
 		2DC306E627E90E100061D641 /* Dragedex */ = {
 			isa = PBXGroup;
 			children = (
+				2D55909727F61C7A00FBD152 /* ActivityPresentable.swift */,
 				2D115E0B27EBA83B00D8A6B5 /* Navigation */,
 				2D3310CF27EB8CE600A2021A /* Mocks */,
 				2D33107E27E9211300A2021A /* Models */,
@@ -418,6 +421,7 @@
 				2D115E0D27EBA87400D8A6B5 /* TabRouter.swift in Sources */,
 				2DC3072D27E914090061D641 /* QueenDetailsViewController.swift in Sources */,
 				2D3310B827EB820500A2021A /* QueensTableViewController.swift in Sources */,
+				2D55909827F61C7A00FBD152 /* ActivityPresentable.swift in Sources */,
 				2DC306EA27E90E100061D641 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

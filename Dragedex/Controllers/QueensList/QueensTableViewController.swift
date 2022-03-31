@@ -12,7 +12,20 @@ protocol QueensViewModelProtocol {
     func updateDataSource()
 }
 
-class QueensTableViewController: UITableViewController {
+class QueensTableViewController: UITableViewController, ActivityPresentable {
+    var activityIndicator: UIActivityIndicatorView?
+    
+    var activityIndicatorContainer: UIView {
+        view
+    }
+    
+    var viewsToToggleHidden: [UIView] {
+        [tableView]
+    }
+    
+    var viewsToToggleEnabled: [UIView] {
+        []
+    }
     
     let viewModel: QueensViewModelProtocol
     let router: TabRouterProtocol

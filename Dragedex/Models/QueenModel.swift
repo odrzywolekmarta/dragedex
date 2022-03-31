@@ -73,7 +73,6 @@ struct SeasonModel: Decodable {
     let winnerId: Int?
     let imageUrl: String
     let queens: [MiniQueenModel]
-    
 }
 
 struct EpisodeModel: Decodable {
