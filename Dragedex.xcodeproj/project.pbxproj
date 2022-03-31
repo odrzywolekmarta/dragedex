@@ -15,7 +15,6 @@
 		2D3310A227EA553800A2021A /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 2D3310A127EA553800A2021A /* SDWebImage */; };
 		2D3310A727EA5B0700A2021A /* TestAllQueens.json in Sources */ = {isa = PBXBuildFile; fileRef = 2D3310A627EA5B0700A2021A /* TestAllQueens.json */; };
 		2D3310B827EB820500A2021A /* QueensTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3310B627EB820500A2021A /* QueensTableViewController.swift */; };
-		2D3310B927EB820500A2021A /* QueensTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D3310B727EB820500A2021A /* QueensTableViewController.xib */; };
 		2D3310C727EB82B700A2021A /* SingleQueenTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3310C527EB82B700A2021A /* SingleQueenTableViewCell.swift */; };
 		2D3310C827EB82B700A2021A /* SingleQueenTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D3310C627EB82B700A2021A /* SingleQueenTableViewCell.xib */; };
 		2D3310D127EB8D0E00A2021A /* MockDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3310D027EB8D0E00A2021A /* MockDataProvider.swift */; };
@@ -27,7 +26,6 @@
 		2D55907427F4BA7600FBD152 /* SingleSeasonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D55907227F4BA7600FBD152 /* SingleSeasonTableViewCell.swift */; };
 		2D55907527F4BA7600FBD152 /* SingleSeasonTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D55907327F4BA7600FBD152 /* SingleSeasonTableViewCell.xib */; };
 		2D55908427F4BFEA00FBD152 /* SeasonsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D55908227F4BFEA00FBD152 /* SeasonsTableViewController.swift */; };
-		2D55908527F4BFEA00FBD152 /* SeasonsTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D55908327F4BFEA00FBD152 /* SeasonsTableViewController.xib */; };
 		2D55908D27F4D25B00FBD152 /* MockSeasonsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D55908C27F4D25B00FBD152 /* MockSeasonsViewModel.swift */; };
 		2D55909827F61C7A00FBD152 /* ActivityPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D55909727F61C7A00FBD152 /* ActivityPresentable.swift */; };
 		2D86E4D327E91F4200646382 /* FavouritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D86E4D127E91F4200646382 /* FavouritesViewController.swift */; };
@@ -71,7 +69,6 @@
 		2D33109827EA4AA400A2021A /* MockQueenDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockQueenDetailsViewModel.swift; sourceTree = "<group>"; };
 		2D3310A627EA5B0700A2021A /* TestAllQueens.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = TestAllQueens.json; sourceTree = "<group>"; };
 		2D3310B627EB820500A2021A /* QueensTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueensTableViewController.swift; sourceTree = "<group>"; };
-		2D3310B727EB820500A2021A /* QueensTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QueensTableViewController.xib; sourceTree = "<group>"; };
 		2D3310C527EB82B700A2021A /* SingleQueenTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleQueenTableViewCell.swift; sourceTree = "<group>"; };
 		2D3310C627EB82B700A2021A /* SingleQueenTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SingleQueenTableViewCell.xib; sourceTree = "<group>"; };
 		2D3310D027EB8D0E00A2021A /* MockDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDataProvider.swift; sourceTree = "<group>"; };
@@ -80,7 +77,6 @@
 		2D55907227F4BA7600FBD152 /* SingleSeasonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleSeasonTableViewCell.swift; sourceTree = "<group>"; };
 		2D55907327F4BA7600FBD152 /* SingleSeasonTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SingleSeasonTableViewCell.xib; sourceTree = "<group>"; };
 		2D55908227F4BFEA00FBD152 /* SeasonsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonsTableViewController.swift; sourceTree = "<group>"; };
-		2D55908327F4BFEA00FBD152 /* SeasonsTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SeasonsTableViewController.xib; sourceTree = "<group>"; };
 		2D55908C27F4D25B00FBD152 /* MockSeasonsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSeasonsViewModel.swift; sourceTree = "<group>"; };
 		2D55909727F61C7A00FBD152 /* ActivityPresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityPresentable.swift; sourceTree = "<group>"; };
 		2D86E4D127E91F4200646382 /* FavouritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesViewController.swift; sourceTree = "<group>"; };
@@ -165,7 +161,6 @@
 			isa = PBXGroup;
 			children = (
 				2D3310B627EB820500A2021A /* QueensTableViewController.swift */,
-				2D3310B727EB820500A2021A /* QueensTableViewController.xib */,
 				2D3310C527EB82B700A2021A /* SingleQueenTableViewCell.swift */,
 				2D3310C627EB82B700A2021A /* SingleQueenTableViewCell.xib */,
 			);
@@ -176,7 +171,6 @@
 			isa = PBXGroup;
 			children = (
 				2D55908227F4BFEA00FBD152 /* SeasonsTableViewController.swift */,
-				2D55908327F4BFEA00FBD152 /* SeasonsTableViewController.xib */,
 				2D55907227F4BA7600FBD152 /* SingleSeasonTableViewCell.swift */,
 				2D55907327F4BA7600FBD152 /* SingleSeasonTableViewCell.xib */,
 			);
@@ -367,7 +361,6 @@
 			files = (
 				2D55907527F4BA7600FBD152 /* SingleSeasonTableViewCell.xib in Resources */,
 				2D55905127EBBCE800FBD152 /* TestQueen.json in Resources */,
-				2D55908527F4BFEA00FBD152 /* SeasonsTableViewController.xib in Resources */,
 				2D3310D527EB964E00A2021A /* TestAllQueens.json in Resources */,
 				2D55906D27F247F700FBD152 /* TestAllSeasons.json in Resources */,
 				2D3310C827EB82B700A2021A /* SingleQueenTableViewCell.xib in Resources */,
@@ -375,7 +368,6 @@
 				2DC306F427E90E100061D641 /* Assets.xcassets in Resources */,
 				2D86E4D427E91F4200646382 /* FavouritesViewController.xib in Resources */,
 				2DC3072E27E914090061D641 /* QueenDetailsViewController.xib in Resources */,
-				2D3310B927EB820500A2021A /* QueensTableViewController.xib in Resources */,
 				2DC306EF27E90E100061D641 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

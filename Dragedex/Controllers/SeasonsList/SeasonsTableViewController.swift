@@ -26,7 +26,7 @@ class SeasonsTableViewController: UITableViewController {
          router: TabRouterProtocol) {
         self.viewModel = viewmodel
         self.router = router
-        super.init(nibName: String(describing: SeasonsTableViewController.self), bundle: nil)
+        super.init(style: .grouped)
     }
     
     required init?(coder: NSCoder) {

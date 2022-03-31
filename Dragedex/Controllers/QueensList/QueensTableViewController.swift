@@ -34,7 +34,7 @@ class QueensTableViewController: UITableViewController, ActivityPresentable {
          router: TabRouterProtocol) {
         self.viewModel = viewModel
         self.router = router
-        super.init(nibName: String(describing: QueensTableViewController.self), bundle: nil)
+        super.init(style: .plain)
     }
     
     required init?(coder: NSCoder) {
