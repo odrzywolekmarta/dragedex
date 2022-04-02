@@ -166,22 +166,12 @@
 		2D3310CF27EB8CE600A2021A /* Mocks */ = {
 			isa = PBXGroup;
 			children = (
-				2D33109827EA4AA400A2021A /* MockQueenDetailsViewModel.swift */,
 				2D33108427E926ED00A2021A /* TestQueen.json */,
-				2D3310D927EBA52000A2021A /* MockQueensViewModel.swift */,
 				2D3310A627EA5B0700A2021A /* TestAllQueens.json */,
-				2D55908C27F4D25B00FBD152 /* MockSeasonsViewModel.swift */,
 				2D55905F27F2466400FBD152 /* TestAllSeasons.json */,
 				2D3310D027EB8D0E00A2021A /* MockDataProvider.swift */,
 			);
 			path = Mocks;
-			sourceTree = "<group>";
-		};
-		2D53D72027F8A60E00CDC94B /* SeasonDetails */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = SeasonDetails;
 			sourceTree = "<group>";
 		};
 		2D53D73027F8CA5F00CDC94B /* Utilities */ = {
@@ -192,34 +182,75 @@
 			path = Utilities;
 			sourceTree = "<group>";
 		};
-		2D55905B27F237D000FBD152 /* QueensList */ = {
+		2D53D73927F8CBD000CDC94B /* Lipsyncs */ = {
 			isa = PBXGroup;
 			children = (
-				2D3310B627EB820500A2021A /* QueensTableViewController.swift */,
-				2D3310C527EB82B700A2021A /* SingleQueenTableViewCell.swift */,
-				2D3310C627EB82B700A2021A /* SingleQueenTableViewCell.xib */,
-			);
-			path = QueensList;
-			sourceTree = "<group>";
-		};
-		2D55907127F4B93000FBD152 /* SeasonsList */ = {
-			isa = PBXGroup;
-			children = (
-				2D55908227F4BFEA00FBD152 /* SeasonsTableViewController.swift */,
-				2D55907227F4BA7600FBD152 /* SingleSeasonTableViewCell.swift */,
-				2D55907327F4BA7600FBD152 /* SingleSeasonTableViewCell.xib */,
-				2D53D72027F8A60E00CDC94B /* SeasonDetails */,
-				2D53D70527F89FC500CDC94B /* EpisodesTableViewController.swift */,
-				2D53D70D27F8A25F00CDC94B /* SingleEpisodeTableViewCell.swift */,
-				2D53D70E27F8A25F00CDC94B /* SingleEpisodeTableViewCell.xib */,
-				2D53D71427F8A5E800CDC94B /* ChallengesTableViewController.swift */,
-				2D53D71927F8A5FB00CDC94B /* SingleChallengeTableViewCell.swift */,
-				2D53D71A27F8A5FB00CDC94B /* SingleChallengeTableViewCell.xib */,
 				2D53D72427F8B08100CDC94B /* LipsyncsTableViewController.swift */,
 				2D53D72927F8B09D00CDC94B /* SingleLipsyncTableViewCell.swift */,
 				2D53D72A27F8B09D00CDC94B /* SingleLipsyncTableViewCell.xib */,
 			);
-			path = SeasonsList;
+			path = Lipsyncs;
+			sourceTree = "<group>";
+		};
+		2D53D73A27F8CBE000CDC94B /* Challenges */ = {
+			isa = PBXGroup;
+			children = (
+				2D53D71427F8A5E800CDC94B /* ChallengesTableViewController.swift */,
+				2D53D71927F8A5FB00CDC94B /* SingleChallengeTableViewCell.swift */,
+				2D53D71A27F8A5FB00CDC94B /* SingleChallengeTableViewCell.xib */,
+			);
+			path = Challenges;
+			sourceTree = "<group>";
+		};
+		2D53D73E27F8CC0100CDC94B /* Episodes */ = {
+			isa = PBXGroup;
+			children = (
+				2D53D70527F89FC500CDC94B /* EpisodesTableViewController.swift */,
+				2D53D70D27F8A25F00CDC94B /* SingleEpisodeTableViewCell.swift */,
+				2D53D70E27F8A25F00CDC94B /* SingleEpisodeTableViewCell.xib */,
+			);
+			path = Episodes;
+			sourceTree = "<group>";
+		};
+		2D53D74227F8CC3400CDC94B /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				2D33109827EA4AA400A2021A /* MockQueenDetailsViewModel.swift */,
+				2DC3072B27E914090061D641 /* QueenDetailsViewController.swift */,
+				2DC3072C27E914090061D641 /* QueenDetailsViewController.xib */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		2D53D74327F8CC3C00CDC94B /* Favourites */ = {
+			isa = PBXGroup;
+			children = (
+				2D86E4D127E91F4200646382 /* FavouritesViewController.swift */,
+				2D86E4D227E91F4200646382 /* FavouritesViewController.xib */,
+			);
+			path = Favourites;
+			sourceTree = "<group>";
+		};
+		2D55905B27F237D000FBD152 /* Queens */ = {
+			isa = PBXGroup;
+			children = (
+				2D3310D927EBA52000A2021A /* MockQueensViewModel.swift */,
+				2D3310B627EB820500A2021A /* QueensTableViewController.swift */,
+				2D3310C527EB82B700A2021A /* SingleQueenTableViewCell.swift */,
+				2D3310C627EB82B700A2021A /* SingleQueenTableViewCell.xib */,
+			);
+			path = Queens;
+			sourceTree = "<group>";
+		};
+		2D55907127F4B93000FBD152 /* Seasons */ = {
+			isa = PBXGroup;
+			children = (
+				2D55908C27F4D25B00FBD152 /* MockSeasonsViewModel.swift */,
+				2D55908227F4BFEA00FBD152 /* SeasonsTableViewController.swift */,
+				2D55907227F4BA7600FBD152 /* SingleSeasonTableViewCell.swift */,
+				2D55907327F4BA7600FBD152 /* SingleSeasonTableViewCell.xib */,
+			);
+			path = Seasons;
 			sourceTree = "<group>";
 		};
 		2DC306DB27E90E100061D641 = {
@@ -285,13 +316,14 @@
 		2DC3073927E91B040061D641 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				2D55905B27F237D000FBD152 /* QueensList */,
-				2D55907127F4B93000FBD152 /* SeasonsList */,
+				2D53D74327F8CC3C00CDC94B /* Favourites */,
+				2D53D74227F8CC3400CDC94B /* Details */,
+				2D53D73E27F8CC0100CDC94B /* Episodes */,
+				2D53D73A27F8CBE000CDC94B /* Challenges */,
+				2D53D73927F8CBD000CDC94B /* Lipsyncs */,
+				2D55905B27F237D000FBD152 /* Queens */,
+				2D55907127F4B93000FBD152 /* Seasons */,
 				2DC3072627E911E50061D641 /* MainTabBarController.swift */,
-				2DC3072B27E914090061D641 /* QueenDetailsViewController.swift */,
-				2DC3072C27E914090061D641 /* QueenDetailsViewController.xib */,
-				2D86E4D127E91F4200646382 /* FavouritesViewController.swift */,
-				2D86E4D227E91F4200646382 /* FavouritesViewController.xib */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
