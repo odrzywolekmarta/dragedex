@@ -10,6 +10,7 @@ import UIKit
 protocol TabRouterProtocol {
     func pushQueenDetails(with model: QueenModel)
     func pushEpisodes(with model: QueenModel)
+    func pushEpisodeDetail(with model: EpisodeModel)
     func pushChallenges(with model: [ChallengeModel])
     func pushChallenges(with model: QueenModel)
     func pushLipsyncs(with model: QueenModel)
@@ -35,6 +36,13 @@ class TabRouter: TabRouterProtocol {
         let episodesController = EpisodesTableViewController(viewModel: viewModel,
                                                              router: self)
         navigationController.pushViewController(episodesController, animated: true)
+    }
+    
+    func pushEpisodeDetail(with model: EpisodeModel) {
+        let viewModel = MockEpisodeDetailsViewModel(model: model)
+        let episodeDetailsController = EpisodeDetailsViewController(viewModel: viewModel,
+                                                                    router: self)
+        navigationController.pushViewController(episodeDetailsController, animated: true)
     }
     
     func pushChallenges(with models: [ChallengeModel]) {

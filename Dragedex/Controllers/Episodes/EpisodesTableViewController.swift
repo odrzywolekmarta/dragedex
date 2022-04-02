@@ -58,4 +58,9 @@ class EpisodesTableViewController: UITableViewController {
         }
         return SingleEpisodeTableViewCell()
     }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let model = viewModel.dataSource[indexPath.row]
+        router.pushEpisodeDetail(with: model)
+    }
 }
