@@ -92,12 +92,15 @@ struct ChallengeModel: Decodable {
     let id: Int
     let type: ChallengeType
     let description: String
-    let won: Bool
+    let prize: String?
+    let episodeId: Int
+    let queens: [MiniQueenModel]
 }
 
 struct LipSyncModel: Decodable {
     let id: Int
-    let won: Bool
     let name: String
     let artist: String
+    let episodeId: Int
+    let queens: [MiniQueenModel]
 }

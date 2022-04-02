@@ -1,0 +1,362 @@
+[
+   {
+      "id":1,
+      "name":"Supermodel",
+      "artist":"RuPaul",
+      "episodeId":8,
+      "queens":[
+         {
+            "id":1,
+            "name":"Victoria 'Porkchop' Parker",
+            "won":false
+         },
+         {
+            "id":3,
+            "name":"Akashia",
+            "won":true
+         }
+      ]
+   },
+   {
+      "id":2,
+      "name":"We Break the Dawn",
+      "artist":"Michelle Williams",
+      "episodeId":9,
+      "queens":[
+         {
+            "id":2,
+            "name":"Tammie Brown",
+            "won":false
+         },
+         {
+            "id":3,
+            "name":"Akashia",
+            "won":true
+         }
+      ]
+   },
+   {
+      "id":3,
+      "name":"The Greatest Love of All",
+      "artist":"Whitney Houston",
+      "episodeId":10,
+      "queens":[
+         {
+            "id":3,
+            "name":"Akashia",
+            "won":false
+         },
+         {
+            "id":9,
+            "name":"Shannel",
+            "won":true
+         }
+      ]
+   },
+   {
+      "id":4,
+      "name":"Would I Lie To You?",
+      "artist":"The Eurythmics",
+      "episodeId":11,
+      "queens":[
+         {
+            "id":4,
+            "name":"Jade",
+            "won":false
+         },
+         {
+            "id":10,
+            "name":"Rebecca Glasscock",
+            "won":true
+         }
+      ]
+   },
+   {
+      "id":5,
+      "name":"Stronger",
+      "artist":"Britney Spears",
+      "episodeId":12,
+      "queens":[
+         {
+            "id":5,
+            "name":"Ongina",
+            "won":false
+         },
+         {
+            "id":12,
+            "name":"Bebe Zahara Benet",
+            "won":true
+         }
+      ]
+   },
+   {
+      "id":6,
+      "name":"Shackles (Praise You)",
+      "artist":"Mary Mary",
+      "episodeId":13,
+      "queens":[
+         {
+            "id":9,
+            "name":"Shannel",
+            "won":false
+         },
+         {
+            "id":10,
+            "name":"Rebecca Glasscock",
+            "won":true
+         }
+      ]
+   },
+   {
+      "id":7,
+      "name":"Cover Girl (Put the Bass in Your Walk)",
+      "artist":"RuPaul",
+      "episodeId":15,
+      "queens":[
+         {
+            "id":11,
+            "name":"Nina Flowers",
+            "won":false
+         },
+         {
+            "id":12,
+            "name":"Bebe Zahara Benet",
+            "won":true
+         }
+      ]
+   },
+   {
+      "id":8,
+      "name":"Cover Girl (Put the Bass in Your Walk)",
+      "artist":"RuPaul",
+      "episodeId":17,
+      "queens":[
+         {
+            "id":13,
+            "name":"Shangela Laquifa Wadley",
+            "won":false
+         },
+         {
+            "id":18,
+            "name":"Sahara Davenport",
+            "won":true
+         }
+      ]
+   },
+   {
+      "id":9,
+      "name":"My Lovin' (You're Never Gonna Get It)",
+      "artist":"En Vogue",
+      "episodeId":18,
+      "queens":[
+         {
+            "id":14,
+            "name":"Nicole Paige Brooks",
+            "won":false
+         },
+         {
+            "id":23,
+            "name":"Raven",
+            "won":true
+         }
+      ]
+   },
+   {
+      "id":10,
+      "name":"I Hear You Knockin",
+      "artist":"Wynonna Judd",
+      "episodeId":19,
+      "queens":[
+         {
+            "id":15,
+            "name":"Mystique Summers Madison",
+            "won":false
+         },
+         {
+            "id":23,
+            "name":"Raven",
+            "won":true
+         }
+      ]
+   },
+   {
+      "id":11,
+      "name":"Two of Hearts",
+      "artist":"Stacey Q",
+      "episodeId":20,
+      "queens":[
+         {
+            "id":16,
+            "name":"Sonique",
+            "won":false
+         },
+         {
+            "id":17,
+            "name":"Morgan McMichaels",
+            "won":true
+         }
+      ]
+   },
+   {
+      "id":12,
+      "name":"Carry On",
+      "artist":"Martha Wash",
+      "episodeId":21,
+      "queens":[
+         {
+            "id":17,
+            "name":"Morgan McMichaels",
+            "won":false
+         },
+         {
+            "id":18,
+            "name":"Sahara Davenport",
+            "won":true
+         }
+      ]
+   },
+   {
+      "id":13,
+      "name":"Black Velvet",
+      "artist":"Alannah Myles",
+      "episodeId":22,
+      "queens":[
+         {
+            "id":18,
+            "name":"Sahara Davenport",
+            "won":false
+         },
+         {
+            "id":22,
+            "name":"Jujubee",
+            "won":true
+         }
+      ]
+   },
+   {
+      "id":14,
+      "name":"He's the Greatest Dancer",
+      "artist":"Sister Sledge",
+      "episodeId":23,
+      "queens":[
+         {
+            "id":19,
+            "name":"Jessica Wild",
+            "won":false
+         },
+         {
+            "id":21,
+            "name":"Tatianna",
+            "won":true
+         }
+      ]
+   },
+   {
+      "id":15,
+      "name":"Shake Your Love",
+      "artist":"Debbie Gibson",
+      "episodeId":24,
+      "queens":[
+         {
+            "id":20,
+            "name":"Pandora Boxx",
+            "won":false
+         },
+         {
+            "id":22,
+            "name":"Jujubee",
+            "won":true
+         }
+      ]
+   },
+   {
+      "id":16,
+      "name":"Something He Can Feel",
+      "artist":"Aretha Franklin",
+      "episodeId":25,
+      "queens":[
+         {
+            "id":21,
+            "name":"Tatianna",
+            "won":false
+         },
+         {
+            "id":22,
+            "name":"Jujubee",
+            "won":true
+         }
+      ]
+   },
+   {
+      "id":17,
+      "name":"Jealous Of My Boogie (Gomi & RasJek Edit)",
+      "artist":"RuPaul",
+      "episodeId":27,
+      "queens":[
+         {
+            "id":23,
+            "name":"Raven",
+            "won":false
+         },
+         {
+            "id":24,
+            "name":"Tyra Sanchez",
+            "won":true
+         }
+      ]
+   },
+   {
+      "id":18,
+      "name":"The Right Stuff",
+      "artist":"Vanessa Williams",
+      "episodeId":30,
+      "queens":[
+         {
+            "id":25,
+            "name":"Venus D-Lite",
+            "won":false
+         },
+         {
+            "id":13,
+            "name":"Shangela Laquifa Wadley",
+            "won":true
+         }
+      ]
+   },
+   {
+      "id":19,
+      "name":"Bad Romance",
+      "artist":"Lady Gaga",
+      "episodeId":31,
+      "queens":[
+         {
+            "id":26,
+            "name":"Phoenix",
+            "won":false
+         },
+         {
+            "id":31,
+            "name":"Delta Work",
+            "won":true
+         }
+      ]
+   },
+   {
+      "id":20,
+      "name":"Don't Leave Me This Way",
+      "artist":"Thelma Houston",
+      "episodeId":32,
+      "queens":[
+         {
+            "id":27,
+            "name":"Mimi Imfurst",
+            "won":false
+         },
+         {
+            "id":28,
+            "name":"India Ferrah",
+            "won":true
+         }
+      ]
+   }
+]

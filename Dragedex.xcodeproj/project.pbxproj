@@ -30,6 +30,10 @@
 		2D53D72B27F8B09D00CDC94B /* SingleLipsyncTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D53D72927F8B09D00CDC94B /* SingleLipsyncTableViewCell.swift */; };
 		2D53D72C27F8B09D00CDC94B /* SingleLipsyncTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D53D72A27F8B09D00CDC94B /* SingleLipsyncTableViewCell.xib */; };
 		2D53D73227F8CA7F00CDC94B /* UIView+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D53D73127F8CA7F00CDC94B /* UIView+extensions.swift */; };
+		2D53D74527F8CEC700CDC94B /* TestEpisodes.json in Sources */ = {isa = PBXBuildFile; fileRef = 2D53D74427F8CEC700CDC94B /* TestEpisodes.json */; };
+		2D53D74A27F8CF1900CDC94B /* TestChallenges.json in Resources */ = {isa = PBXBuildFile; fileRef = 2D53D74927F8CF1900CDC94B /* TestChallenges.json */; };
+		2D53D75227F8CF4200CDC94B /* TestLipsyncs.json in Resources */ = {isa = PBXBuildFile; fileRef = 2D53D75127F8CF4200CDC94B /* TestLipsyncs.json */; };
+		2D53D75927F8CFCC00CDC94B /* TestEpisodes.json in Resources */ = {isa = PBXBuildFile; fileRef = 2D53D74427F8CEC700CDC94B /* TestEpisodes.json */; };
 		2D55905127EBBCE800FBD152 /* TestQueen.json in Resources */ = {isa = PBXBuildFile; fileRef = 2D33108427E926ED00A2021A /* TestQueen.json */; };
 		2D55906027F2466400FBD152 /* TestAllSeasons.json in Sources */ = {isa = PBXBuildFile; fileRef = 2D55905F27F2466400FBD152 /* TestAllSeasons.json */; };
 		2D55906D27F247F700FBD152 /* TestAllSeasons.json in Resources */ = {isa = PBXBuildFile; fileRef = 2D55905F27F2466400FBD152 /* TestAllSeasons.json */; };
@@ -93,6 +97,9 @@
 		2D53D72927F8B09D00CDC94B /* SingleLipsyncTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleLipsyncTableViewCell.swift; sourceTree = "<group>"; };
 		2D53D72A27F8B09D00CDC94B /* SingleLipsyncTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SingleLipsyncTableViewCell.xib; sourceTree = "<group>"; };
 		2D53D73127F8CA7F00CDC94B /* UIView+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+extensions.swift"; sourceTree = "<group>"; };
+		2D53D74427F8CEC700CDC94B /* TestEpisodes.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = TestEpisodes.json; sourceTree = "<group>"; };
+		2D53D74927F8CF1900CDC94B /* TestChallenges.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = TestChallenges.json; sourceTree = "<group>"; };
+		2D53D75127F8CF4200CDC94B /* TestLipsyncs.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = TestLipsyncs.json; sourceTree = "<group>"; };
 		2D55905F27F2466400FBD152 /* TestAllSeasons.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = TestAllSeasons.json; sourceTree = "<group>"; };
 		2D55907227F4BA7600FBD152 /* SingleSeasonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleSeasonTableViewCell.swift; sourceTree = "<group>"; };
 		2D55907327F4BA7600FBD152 /* SingleSeasonTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SingleSeasonTableViewCell.xib; sourceTree = "<group>"; };
@@ -169,6 +176,9 @@
 				2D33108427E926ED00A2021A /* TestQueen.json */,
 				2D3310A627EA5B0700A2021A /* TestAllQueens.json */,
 				2D55905F27F2466400FBD152 /* TestAllSeasons.json */,
+				2D53D74427F8CEC700CDC94B /* TestEpisodes.json */,
+				2D53D74927F8CF1900CDC94B /* TestChallenges.json */,
+				2D53D75127F8CF4200CDC94B /* TestLipsyncs.json */,
 				2D3310D027EB8D0E00A2021A /* MockDataProvider.swift */,
 			);
 			path = Mocks;
@@ -437,11 +447,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D53D75927F8CFCC00CDC94B /* TestEpisodes.json in Resources */,
+				2D53D75227F8CF4200CDC94B /* TestLipsyncs.json in Resources */,
 				2D55907527F4BA7600FBD152 /* SingleSeasonTableViewCell.xib in Resources */,
 				2D55905127EBBCE800FBD152 /* TestQueen.json in Resources */,
 				2D53D71C27F8A5FB00CDC94B /* SingleChallengeTableViewCell.xib in Resources */,
 				2D3310D527EB964E00A2021A /* TestAllQueens.json in Resources */,
 				2D55906D27F247F700FBD152 /* TestAllSeasons.json in Resources */,
+				2D53D74A27F8CF1900CDC94B /* TestChallenges.json in Resources */,
 				2D3310C827EB82B700A2021A /* SingleQueenTableViewCell.xib in Resources */,
 				2DC306F727E90E100061D641 /* LaunchScreen.storyboard in Resources */,
 				2DC306F427E90E100061D641 /* Assets.xcassets in Resources */,
@@ -503,6 +516,7 @@
 				2D3310B827EB820500A2021A /* QueensTableViewController.swift in Sources */,
 				2D55909827F61C7A00FBD152 /* ActivityPresentable.swift in Sources */,
 				2DC306EA27E90E100061D641 /* SceneDelegate.swift in Sources */,
+				2D53D74527F8CEC700CDC94B /* TestEpisodes.json in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

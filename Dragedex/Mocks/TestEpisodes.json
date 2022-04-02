@@ -1,0 +1,142 @@
+[
+   {
+      "id":8,
+      "title":"Drag on a Dime",
+      "episodeInSeason":1,
+      "seasonId":1,
+      "airDate":"2009-02-02"
+   },
+   {
+      "id":9,
+      "title":"Girl Groups",
+      "episodeInSeason":2,
+      "seasonId":1,
+      "airDate":"2009-02-09"
+   },
+   {
+      "id":10,
+      "title":"Queens of All Media",
+      "episodeInSeason":3,
+      "seasonId":1,
+      "airDate":"2009-02-16"
+   },
+   {
+      "id":11,
+      "title":"Mac Viva-Glam Challenge",
+      "episodeInSeason":4,
+      "seasonId":1,
+      "airDate":"2009-02-23"
+   },
+   {
+      "id":12,
+      "title":"Drag School of Charm",
+      "episodeInSeason":5,
+      "seasonId":1,
+      "airDate":"2009-03-02"
+   },
+   {
+      "id":13,
+      "title":"Absolut Drag Ball",
+      "episodeInSeason":6,
+      "seasonId":1,
+      "airDate":"2009-03-09"
+   },
+   {
+      "id":14,
+      "title":"Extra Special Edition",
+      "episodeInSeason":7,
+      "seasonId":1,
+      "airDate":"2009-03-16"
+   },
+   {
+      "id":15,
+      "title":"Grand Finale",
+      "episodeInSeason":8,
+      "seasonId":1,
+      "airDate":"2009-03-23"
+   },
+   {
+      "id":16,
+      "title":"Re-United!",
+      "episodeInSeason":9,
+      "seasonId":1,
+      "airDate":"2009-03-23"
+   },
+   {
+      "id":17,
+      "title":"Gone with the Windows",
+      "episodeInSeason":1,
+      "seasonId":2,
+      "airDate":"2010-02-01"
+   },
+   {
+      "id":18,
+      "title":"Starrbootylicious",
+      "episodeInSeason":2,
+      "seasonId":2,
+      "airDate":"2010-02-08"
+   },
+   {
+      "id":19,
+      "title":"Country Queens",
+      "episodeInSeason":3,
+      "seasonId":2,
+      "airDate":"2010-02-15"
+   },
+   {
+      "id":20,
+      "title":"The Snatch Game",
+      "episodeInSeason":4,
+      "seasonId":2,
+      "airDate":"2010-02-22"
+   },
+   {
+      "id":21,
+      "title":"Here Comes the Bride",
+      "episodeInSeason":5,
+      "seasonId":2,
+      "airDate":"2010-03-01"
+   },
+   {
+      "id":22,
+      "title":"Rocker Chicks",
+      "episodeInSeason":6,
+      "seasonId":2,
+      "airDate":"2010-03-08"
+   },
+   {
+      "id":23,
+      "title":"Once Upon a Queen",
+      "episodeInSeason":7,
+      "seasonId":2,
+      "airDate":"2010-03-22"
+   },
+   {
+      "id":24,
+      "title":"Golden Gals",
+      "episodeInSeason":8,
+      "seasonId":2,
+      "airDate":"2010-03-29"
+   },
+   {
+      "id":25,
+      "title":"The Diva Awards",
+      "episodeInSeason":9,
+      "seasonId":2,
+      "airDate":"2010-04-12"
+   },
+   {
+      "id":26,
+      "title":"The Main Event Clip Show",
+      "episodeInSeason":10,
+      "seasonId":2,
+      "airDate":"2010-04-19"
+   },
+   {
+      "id":27,
+      "title":"Grand Finale",
+      "episodeInSeason":11,
+      "seasonId":2,
+      "airDate":"2010-04-26"
+   }
+]

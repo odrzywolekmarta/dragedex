@@ -48,4 +48,25 @@ struct MockDataProvider {
         decoder.keyDecodingStrategy = .convertFromSnakeCase
         return try decoder.decode([SeasonModel].self, from: jsonData)
     }
+    
+    func getTestEpisodes() throws -> [EpisodeModel] {
+        let jsonData = try loadJsonDictionaryArray(name: "TestEpisodes")
+        let decoder = JSONDecoder()
+        decoder.keyDecodingStrategy = .convertFromSnakeCase
+        return try decoder.decode([EpisodeModel].self, from: jsonData)
+    }
+    
+    func getTestChallenges() throws -> [ChallengeModel] {
+        let jsonData = try loadJsonDictionaryArray(name: "TestChallenges")
+        let decoder = JSONDecoder()
+        decoder.keyDecodingStrategy = .convertFromSnakeCase
+        return try decoder.decode([ChallengeModel].self, from: jsonData)
+    }
+    
+    func getTestLipsyncs() throws -> [LipSyncModel] {
+        let jsonData = try loadJsonDictionaryArray(name: "TestLipsyncs")
+        let decoder = JSONDecoder()
+        decoder.keyDecodingStrategy = .convertFromSnakeCase
+        return try decoder.decode([LipSyncModel].self, from: jsonData)
+    }
 }

@@ -1,0 +1,972 @@
+[
+   {
+      "id":1,
+      "type":"main",
+      "description":"Sexy Photo Shoot & Thrift Store outfits",
+      "prize":null,
+      "episodeId":8,
+      "queens":[
+         {
+            "id":1,
+            "name":"Victoria 'Porkchop' Parker",
+            "won":false
+         },
+         {
+            "id":2,
+            "name":"Tammie Brown",
+            "won":false
+         },
+         {
+            "id":3,
+            "name":"Akashia",
+            "won":false
+         },
+         {
+            "id":4,
+            "name":"Jade",
+            "won":false
+         },
+         {
+            "id":5,
+            "name":"Ongina",
+            "won":false
+         },
+         {
+            "id":9,
+            "name":"Shannel",
+            "won":false
+         },
+         {
+            "id":10,
+            "name":"Rebecca Glasscock",
+            "won":false
+         },
+         {
+            "id":11,
+            "name":"Nina Flowers",
+            "won":true
+         },
+         {
+            "id":12,
+            "name":"Bebe Zahara Benet",
+            "won":false
+         }
+      ]
+   },
+   {
+      "id":2,
+      "type":"mini",
+      "description":"Act out certain emotions and take pictures of themselves with a digital camera",
+      "prize":"Team captains; got to select their group",
+      "episodeId":9,
+      "queens":[
+         {
+            "id":5,
+            "name":"Ongina",
+            "won":true
+         },
+         {
+            "id":4,
+            "name":"Jade",
+            "won":false
+         },
+         {
+            "id":10,
+            "name":"Rebecca Glasscock",
+            "won":false
+         },
+         {
+            "id":11,
+            "name":"Nina Flowers",
+            "won":false
+         },
+         {
+            "id":3,
+            "name":"Akashia",
+            "won":true
+         },
+         {
+            "id":2,
+            "name":"Tammie Brown",
+            "won":false
+         },
+         {
+            "id":12,
+            "name":"Bebe Zahara Benet",
+            "won":false
+         },
+         {
+            "id":9,
+            "name":"Shannel",
+            "won":false
+         }
+      ]
+   },
+   {
+      "id":3,
+      "type":"main",
+      "description":"Destiny's Child girl group battle",
+      "prize":null,
+      "episodeId":9,
+      "queens":[
+         {
+            "id":4,
+            "name":"Jade",
+            "won":false
+         },
+         {
+            "id":10,
+            "name":"Rebecca Glasscock",
+            "won":false
+         },
+         {
+            "id":12,
+            "name":"Bebe Zahara Benet",
+            "won":false
+         },
+         {
+            "id":9,
+            "name":"Shannel",
+            "won":false
+         },
+         {
+            "id":2,
+            "name":"Tammie Brown",
+            "won":false
+         },
+         {
+            "id":11,
+            "name":"Nina Flowers",
+            "won":false
+         },
+         {
+            "id":3,
+            "name":"Akashia",
+            "won":false
+         },
+         {
+            "id":5,
+            "name":"Ongina",
+            "won":true
+         }
+      ]
+   },
+   {
+      "id":4,
+      "type":"main",
+      "description":"Chanelling Oprah",
+      "prize":null,
+      "episodeId":10,
+      "queens":[
+         {
+            "id":4,
+            "name":"Jade",
+            "won":false
+         },
+         {
+            "id":9,
+            "name":"Shannel",
+            "won":false
+         },
+         {
+            "id":12,
+            "name":"Bebe Zahara Benet",
+            "won":true
+         },
+         {
+            "id":11,
+            "name":"Nina Flowers",
+            "won":false
+         },
+         {
+            "id":10,
+            "name":"Rebecca Glasscock",
+            "won":false
+         },
+         {
+            "id":3,
+            "name":"Akashia",
+            "won":false
+         },
+         {
+            "id":5,
+            "name":"Ongina",
+            "won":false
+         }
+      ]
+   },
+   {
+      "id":5,
+      "type":"mini",
+      "description":"30 minutes to do partner's makeup",
+      "prize":"Won 5 extra minutes in the Main Challenge",
+      "episodeId":11,
+      "queens":[
+         {
+            "id":11,
+            "name":"Nina Flowers",
+            "won":false
+         },
+         {
+            "id":5,
+            "name":"Ongina",
+            "won":false
+         },
+         {
+            "id":12,
+            "name":"Bebe Zahara Benet",
+            "won":false
+         },
+         {
+            "id":10,
+            "name":"Rebecca Glasscock",
+            "won":false
+         },
+         {
+            "id":9,
+            "name":"Shannel",
+            "won":false
+         },
+         {
+            "id":4,
+            "name":"Jade",
+            "won":true
+         }
+      ]
+   },
+   {
+      "id":6,
+      "type":"main",
+      "description":"Film a Mac-Viva Glam commercial in 10 minutes",
+      "prize":null,
+      "episodeId":11,
+      "queens":[
+         {
+            "id":9,
+            "name":"Shannel",
+            "won":false
+         },
+         {
+            "id":4,
+            "name":"Jade",
+            "won":false
+         },
+         {
+            "id":11,
+            "name":"Nina Flowers",
+            "won":false
+         },
+         {
+            "id":5,
+            "name":"Ongina",
+            "won":true
+         },
+         {
+            "id":10,
+            "name":"Rebecca Glasscock",
+            "won":false
+         },
+         {
+            "id":12,
+            "name":"Bebe Zahara Benet",
+            "won":false
+         }
+      ]
+   },
+   {
+      "id":7,
+      "type":"mini",
+      "description":"Exercise and endurance challenge",
+      "prize":"got to select her partner and with whom the others worked with",
+      "episodeId":12,
+      "queens":[
+         {
+            "id":11,
+            "name":"Nina Flowers",
+            "won":false
+         },
+         {
+            "id":12,
+            "name":"Bebe Zahara Benet",
+            "won":false
+         },
+         {
+            "id":9,
+            "name":"Shannel",
+            "won":false
+         },
+         {
+            "id":10,
+            "name":"Rebecca Glasscock",
+            "won":true
+         },
+         {
+            "id":5,
+            "name":"Ongina",
+            "won":false
+         }
+      ]
+   },
+   {
+      "id":8,
+      "type":"main",
+      "description":"Transforming a female fighter in their own image",
+      "prize":null,
+      "episodeId":12,
+      "queens":[
+         {
+            "id":5,
+            "name":"Ongina",
+            "won":false
+         },
+         {
+            "id":9,
+            "name":"Shannel",
+            "won":false
+         },
+         {
+            "id":11,
+            "name":"Nina Flowers",
+            "won":false
+         },
+         {
+            "id":12,
+            "name":"Bebe Zahara Benet",
+            "won":false
+         },
+         {
+            "id":10,
+            "name":"Rebecca Glasscock",
+            "won":true
+         }
+      ]
+   },
+   {
+      "id":9,
+      "type":"mini",
+      "description":"'Vogue' posing challenge",
+      "prize":"got select her flavor and pair everyone else up",
+      "episodeId":13,
+      "queens":[
+         {
+            "id":9,
+            "name":"Shannel",
+            "won":false
+         },
+         {
+            "id":11,
+            "name":"Nina Flowers",
+            "won":true
+         },
+         {
+            "id":10,
+            "name":"Rebecca Glasscock",
+            "won":false
+         },
+         {
+            "id":12,
+            "name":"Bebe Zahara Benet",
+            "won":false
+         }
+      ]
+   },
+   {
+      "id":10,
+      "type":"main",
+      "description":"Drag Ball featuring three different looks",
+      "prize":null,
+      "episodeId":13,
+      "queens":[
+         {
+            "id":9,
+            "name":"Shannel",
+            "won":false
+         },
+         {
+            "id":10,
+            "name":"Rebecca Glasscock",
+            "won":false
+         },
+         {
+            "id":11,
+            "name":"Nina Flowers",
+            "won":false
+         },
+         {
+            "id":12,
+            "name":"Bebe Zahara Benet",
+            "won":true
+         }
+      ]
+   },
+   {
+      "id":11,
+      "type":"main",
+      "description":"Recording a verse and filming a spot for RuPaul's latest video",
+      "prize":null,
+      "episodeId":15,
+      "queens":[
+         {
+            "id":10,
+            "name":"Rebecca Glasscock",
+            "won":false
+         },
+         {
+            "id":11,
+            "name":"Nina Flowers",
+            "won":false
+         },
+         {
+            "id":12,
+            "name":"Bebe Zahara Benet",
+            "won":false
+         }
+      ]
+   },
+   {
+      "id":12,
+      "type":"mini",
+      "description":"Gone with the Wind inspired photo shoot",
+      "prize":null,
+      "episodeId":17,
+      "queens":[
+         {
+            "id":14,
+            "name":"Nicole Paige Brooks",
+            "won":false
+         },
+         {
+            "id":19,
+            "name":"Jessica Wild",
+            "won":false
+         },
+         {
+            "id":13,
+            "name":"Shangela Laquifa Wadley",
+            "won":false
+         },
+         {
+            "id":21,
+            "name":"Tatianna",
+            "won":false
+         },
+         {
+            "id":17,
+            "name":"Morgan McMichaels",
+            "won":false
+         },
+         {
+            "id":20,
+            "name":"Pandora Boxx",
+            "won":false
+         },
+         {
+            "id":22,
+            "name":"Jujubee",
+            "won":false
+         },
+         {
+            "id":18,
+            "name":"Sahara Davenport",
+            "won":false
+         },
+         {
+            "id":16,
+            "name":"Sonique",
+            "won":false
+         },
+         {
+            "id":24,
+            "name":"Tyra Sanchez",
+            "won":false
+         },
+         {
+            "id":15,
+            "name":"Mystique Summers Madison",
+            "won":false
+         },
+         {
+            "id":23,
+            "name":"Raven",
+            "won":true
+         }
+      ]
+   },
+   {
+      "id":13,
+      "type":"main",
+      "description":"Outfits made from window treatments and home furnishings",
+      "prize":null,
+      "episodeId":17,
+      "queens":[
+         {
+            "id":14,
+            "name":"Nicole Paige Brooks",
+            "won":false
+         },
+         {
+            "id":18,
+            "name":"Sahara Davenport",
+            "won":false
+         },
+         {
+            "id":13,
+            "name":"Shangela Laquifa Wadley",
+            "won":false
+         },
+         {
+            "id":19,
+            "name":"Jessica Wild",
+            "won":false
+         },
+         {
+            "id":17,
+            "name":"Morgan McMichaels",
+            "won":true
+         },
+         {
+            "id":22,
+            "name":"Jujubee",
+            "won":false
+         },
+         {
+            "id":24,
+            "name":"Tyra Sanchez",
+            "won":false
+         },
+         {
+            "id":20,
+            "name":"Pandora Boxx",
+            "won":false
+         },
+         {
+            "id":21,
+            "name":"Tatianna",
+            "won":false
+         },
+         {
+            "id":15,
+            "name":"Mystique Summers Madison",
+            "won":false
+         },
+         {
+            "id":23,
+            "name":"Raven",
+            "won":false
+         },
+         {
+            "id":16,
+            "name":"Sonique",
+            "won":false
+         }
+      ]
+   },
+   {
+      "id":14,
+      "type":"mini",
+      "description":"Turn 'Mini-Ru' doll from a lady to a tramp in teams of two",
+      "prize":"group leaders for the next challenge",
+      "episodeId":18,
+      "queens":[
+         {
+            "id":17,
+            "name":"Morgan McMichaels",
+            "won":false
+         },
+         {
+            "id":19,
+            "name":"Jessica Wild",
+            "won":false
+         },
+         {
+            "id":15,
+            "name":"Mystique Summers Madison",
+            "won":false
+         },
+         {
+            "id":18,
+            "name":"Sahara Davenport",
+            "won":true
+         },
+         {
+            "id":21,
+            "name":"Tatianna",
+            "won":false
+         },
+         {
+            "id":14,
+            "name":"Nicole Paige Brooks",
+            "won":false
+         },
+         {
+            "id":23,
+            "name":"Raven",
+            "won":false
+         },
+         {
+            "id":20,
+            "name":"Pandora Boxx",
+            "won":true
+         },
+         {
+            "id":22,
+            "name":"Jujubee",
+            "won":false
+         },
+         {
+            "id":24,
+            "name":"Tyra Sanchez",
+            "won":false
+         },
+         {
+            "id":16,
+            "name":"Sonique",
+            "won":false
+         }
+      ]
+   },
+   {
+      "id":15,
+      "type":"main",
+      "description":"Teams compete to earn more cash performing burlesque and selling gift certificates",
+      "prize":null,
+      "episodeId":18,
+      "queens":[
+         {
+            "id":17,
+            "name":"Morgan McMichaels",
+            "won":false
+         },
+         {
+            "id":15,
+            "name":"Mystique Summers Madison",
+            "won":false
+         },
+         {
+            "id":21,
+            "name":"Tatianna",
+            "won":false
+         },
+         {
+            "id":20,
+            "name":"Pandora Boxx",
+            "won":false
+         },
+         {
+            "id":16,
+            "name":"Sonique",
+            "won":false
+         },
+         {
+            "id":18,
+            "name":"Sahara Davenport",
+            "won":true
+         },
+         {
+            "id":19,
+            "name":"Jessica Wild",
+            "won":false
+         },
+         {
+            "id":14,
+            "name":"Nicole Paige Brooks",
+            "won":false
+         },
+         {
+            "id":22,
+            "name":"Jujubee",
+            "won":false
+         },
+         {
+            "id":23,
+            "name":"Raven",
+            "won":false
+         },
+         {
+            "id":24,
+            "name":"Tyra Sanchez",
+            "won":false
+         }
+      ]
+   },
+   {
+      "id":16,
+      "type":"mini",
+      "description":"'Chicken or What?' eating contest",
+      "prize":"team captians for the next challenge.",
+      "episodeId":19,
+      "queens":[
+         {
+            "id":15,
+            "name":"Mystique Summers Madison",
+            "won":true
+         },
+         {
+            "id":19,
+            "name":"Jessica Wild",
+            "won":false
+         },
+         {
+            "id":21,
+            "name":"Tatianna",
+            "won":false
+         },
+         {
+            "id":20,
+            "name":"Pandora Boxx",
+            "won":false
+         },
+         {
+            "id":18,
+            "name":"Sahara Davenport",
+            "won":false
+         },
+         {
+            "id":16,
+            "name":"Sonique",
+            "won":false
+         },
+         {
+            "id":17,
+            "name":"Morgan McMichaels",
+            "won":true
+         },
+         {
+            "id":23,
+            "name":"Raven",
+            "won":false
+         },
+         {
+            "id":24,
+            "name":"Tyra Sanchez",
+            "won":false
+         },
+         {
+            "id":22,
+            "name":"Jujubee",
+            "won":false
+         }
+      ]
+   },
+   {
+      "id":17,
+      "type":"main",
+      "description":"Teams compete as feuding families in a TV Commercial for Disco Shortening in Country",
+      "prize":null,
+      "episodeId":19,
+      "queens":[
+         {
+            "id":18,
+            "name":"Sahara Davenport",
+            "won":false
+         },
+         {
+            "id":17,
+            "name":"Morgan McMichaels",
+            "won":false
+         },
+         {
+            "id":20,
+            "name":"Pandora Boxx",
+            "won":false
+         },
+         {
+            "id":23,
+            "name":"Raven",
+            "won":false
+         },
+         {
+            "id":15,
+            "name":"Mystique Summers Madison",
+            "won":false
+         },
+         {
+            "id":22,
+            "name":"Jujubee",
+            "won":false
+         },
+         {
+            "id":16,
+            "name":"Sonique",
+            "won":false
+         },
+         {
+            "id":24,
+            "name":"Tyra Sanchez",
+            "won":true
+         },
+         {
+            "id":19,
+            "name":"Jessica Wild",
+            "won":false
+         },
+         {
+            "id":21,
+            "name":"Tatianna",
+            "won":false
+         }
+      ]
+   },
+   {
+      "id":18,
+      "type":"mini",
+      "description":"'The Queen is Right' bidding challenge",
+      "prize":"allowed a one time call home",
+      "episodeId":20,
+      "queens":[
+         {
+            "id":15,
+            "name":"Mystique Summers Madison",
+            "won":false
+         },
+         {
+            "id":20,
+            "name":"Pandora Boxx",
+            "won":false
+         },
+         {
+            "id":18,
+            "name":"Sahara Davenport",
+            "won":false
+         },
+         {
+            "id":16,
+            "name":"Sonique",
+            "won":false
+         },
+         {
+            "id":21,
+            "name":"Tatianna",
+            "won":false
+         },
+         {
+            "id":23,
+            "name":"Raven",
+            "won":true
+         },
+         {
+            "id":19,
+            "name":"Jessica Wild",
+            "won":false
+         },
+         {
+            "id":17,
+            "name":"Morgan McMichaels",
+            "won":false
+         },
+         {
+            "id":22,
+            "name":"Jujubee",
+            "won":false
+         },
+         {
+            "id":24,
+            "name":"Tyra Sanchez",
+            "won":false
+         }
+      ]
+   },
+   {
+      "id":19,
+      "type":"main",
+      "description":"Snatch Game",
+      "prize":null,
+      "episodeId":20,
+      "queens":[
+         {
+            "id":19,
+            "name":"Jessica Wild",
+            "won":false
+         },
+         {
+            "id":17,
+            "name":"Morgan McMichaels",
+            "won":false
+         },
+         {
+            "id":18,
+            "name":"Sahara Davenport",
+            "won":false
+         },
+         {
+            "id":16,
+            "name":"Sonique",
+            "won":false
+         },
+         {
+            "id":21,
+            "name":"Tatianna",
+            "won":true
+         },
+         {
+            "id":20,
+            "name":"Pandora Boxx",
+            "won":false
+         },
+         {
+            "id":23,
+            "name":"Raven",
+            "won":false
+         },
+         {
+            "id":22,
+            "name":"Jujubee",
+            "won":false
+         },
+         {
+            "id":24,
+            "name":"Tyra Sanchez",
+            "won":false
+         }
+      ]
+   },
+   {
+      "id":20,
+      "type":"mini",
+      "description":"Decorate a box that shows who they are and they must borrow something from another contestant",
+      "prize":null,
+      "episodeId":21,
+      "queens":[
+         {
+            "id":21,
+            "name":"Tatianna",
+            "won":false
+         },
+         {
+            "id":22,
+            "name":"Jujubee",
+            "won":false
+         },
+         {
+            "id":23,
+            "name":"Raven",
+            "won":true
+         },
+         {
+            "id":19,
+            "name":"Jessica Wild",
+            "won":false
+         },
+         {
+            "id":24,
+            "name":"Tyra Sanchez",
+            "won":false
+         },
+         {
+            "id":20,
+            "name":"Pandora Boxx",
+            "won":false
+         },
+         {
+            "id":17,
+            "name":"Morgan McMichaels",
+            "won":false
+         },
+         {
+            "id":18,
+            "name":"Sahara Davenport",
+            "won":false
+         }
+      ]
+   }
+]
