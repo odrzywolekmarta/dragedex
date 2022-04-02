@@ -13,7 +13,8 @@ protocol QueenDetailsViewModelProtocol {
     func getAdditionalQueenData(completion: (Result<QueenModel, Error>) -> Void)
 }
 
-class QueenDetailsViewModel: QueenDetailsViewModelProtocol {
+class QueenDetailsViewModel:
+    QueenDetailsViewModelProtocol {
     var model: QueenModel
     init(with model: QueenModel) {
         self.model = model
@@ -24,14 +25,20 @@ class QueenDetailsViewModel: QueenDetailsViewModelProtocol {
 
 class QueenDetailsViewController: UIViewController {
     @IBOutlet var queensImageView: UIImageView!
-    @IBOutlet var nameLabel: UILabel!
     @IBOutlet var quoteLabel: UILabel!
     @IBOutlet var seasonsLabel: UILabel!
     @IBOutlet var winnerLabel: UILabel!
+    @IBOutlet var episodesButton: UIButton!
+    @IBOutlet var challengesButton: UIButton!
+    @IBOutlet var lipsyncsButton: UIButton!
+    @IBOutlet var cardContainterView: UIView!
     
     let viewModel: QueenDetailsViewModelProtocol
-    init(viewModel: QueenDetailsViewModelProtocol) {
+    let router: TabRouterProtocol
+    init(viewModel: QueenDetailsViewModelProtocol,
+         router: TabRouterProtocol) {
         self.viewModel = viewModel
+        self.router = router
         super.init(nibName: String(describing: QueenDetailsViewController.self), bundle: nil)
     }
     
@@ -45,6 +52,25 @@ class QueenDetailsViewController: UIViewController {
     
     func doConfiguration() {
         updateUI(with: viewModel.model)
+        queensImageView.makeRound()
+        cardContainterView.applyShadow()
+        cardContainterView.layer.cornerRadius = 8
+        cardContainterView.clipsToBounds = true
+        episodesButton.addTarget(self, action: #selector(episodesButtonTapped), for: .touchUpInside)
+        challengesButton.addTarget(self, action: #selector(challengesButtonTapped), for: .touchUpInside)
+        lipsyncsButton.addTarget(self, action: #selector(lipsyncsButtonTapped), for: .touchUpInside)
+    }
+    
+    @objc func episodesButtonTapped() {
+        router.pushEpisodes(with: viewModel.model)
+    }
+    
+    @objc func challengesButtonTapped() {
+        router.pushChallenges(with: viewModel.model)
+    }
+    
+    @objc func lipsyncsButtonTapped() {
+        router.pushLipsyncs(with: viewModel.model)
     }
     
     func fetchAdditionalQueenData() {
@@ -59,8 +85,10 @@ class QueenDetailsViewController: UIViewController {
     }
     
     func updateUI(with model: QueenModel) {
-        nameLabel.text = model.name
         quoteLabel.text = "\"\(model.quote)\""
+        title = model.name
+        let color = UIColor.lightGray
+        view.backgroundColor = color
         
         if let seasonsNumbers = model.seasonsDescription {
             seasonsLabel.text = seasonsNumbers

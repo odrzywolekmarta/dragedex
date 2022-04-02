@@ -8,8 +8,7 @@
 import UIKit
 
 extension UIView {
-    func applyShadow(cornerRadius: CGFloat) {
-        layer.cornerRadius = cornerRadius
+    func applyShadow() {
         layer.masksToBounds = false
         layer.shadowRadius = 4.0
         layer.shadowOpacity = 0.5
@@ -22,5 +21,6 @@ extension UIImageView {
     func makeRound() {
         layer.cornerRadius = frame.width / 2
         layer.masksToBounds = true
+        clipsToBounds = true
     }
 }

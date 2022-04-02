@@ -16,8 +16,9 @@ class SingleQueenTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        containerView.applyShadow(cornerRadius: 8)
+        containerView.applyShadow()
         queenImageView.makeRound()
+        containerView.layer.cornerRadius = 8
     }
     
     override func setSelected(_ selected: Bool, animated: Bool) {

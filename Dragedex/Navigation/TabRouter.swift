@@ -9,9 +9,9 @@ import UIKit
 
 protocol TabRouterProtocol {
     func pushQueenDetails(with model: QueenModel)
-    func pushSeasonDetails(with model: SeasonForQueenModel)
-    func pushEpisodeDetails(with model: EpisodeModel)
-    func pushSeasonsList(with model: SeasonModel)
+    func pushEpisodes(with model: QueenModel)
+    func pushChallenges(with model: QueenModel)
+    func pushLipsyncs(with model: QueenModel)
 }
 
 class TabRouter: TabRouterProtocol {
@@ -23,18 +23,29 @@ class TabRouter: TabRouterProtocol {
     
     func pushQueenDetails(with model: QueenModel) {
         let viewModel = QueenDetailsViewModel(with: model)
-        let queensController = QueenDetailsViewController(viewModel: viewModel)
+        let queensController = QueenDetailsViewController(viewModel: viewModel,
+                                                          router: self)
         navigationController.pushViewController(queensController, animated: true)
     }
     
-    func pushSeasonDetails(with model: SeasonForQueenModel) {
+    func pushEpisodes(with model: QueenModel) {
+        let viewModel = MockEpisodesViewModel()
+        let episodesController = EpisodesTableViewController(viewModel: viewModel,
+                                                             router: self)
+        navigationController.pushViewController(episodesController, animated: true)
     }
     
-    func pushEpisodeDetails(with model: EpisodeModel) {
+    func pushChallenges(with model: QueenModel) {
+        let viewModel = MockChallengesViewModel()
+        let challengesController = ChallengesTableViewController(viewModel: viewModel,
+                                                                 router: self)
+        navigationController.pushViewController(challengesController, animated: true)
     }
     
-    func pushSeasonsList(with model: SeasonModel) {
+    func pushLipsyncs(with model: QueenModel) {
+        let viewModel = MockLipsyncsViewModel()
+        let lipsyncsController = LipsyncsTableViewController(viewModel: viewModel,
+                                                             router: self)
+        navigationController.pushViewController(lipsyncsController, animated: true)
     }
-    
-    
 }
