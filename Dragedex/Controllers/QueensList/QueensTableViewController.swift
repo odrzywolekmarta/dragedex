@@ -12,20 +12,7 @@ protocol QueensViewModelProtocol {
     func updateDataSource()
 }
 
-class QueensTableViewController: UITableViewController, ActivityPresentable {
-    var activityIndicator: UIActivityIndicatorView?
-    
-    var activityIndicatorContainer: UIView {
-        view
-    }
-    
-    var viewsToToggleHidden: [UIView] {
-        [tableView]
-    }
-    
-    var viewsToToggleEnabled: [UIView] {
-        []
-    }
+class QueensTableViewController: UITableViewController {
     
     let viewModel: QueensViewModelProtocol
     let router: TabRouterProtocol
@@ -56,6 +43,7 @@ class QueensTableViewController: UITableViewController, ActivityPresentable {
         let cellName = String(describing: SingleQueenTableViewCell.self)
         tableView.register(UINib(nibName: cellName, bundle: Bundle.main), forCellReuseIdentifier: cellName)
     }
+    
     override func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
             return UITableView.automaticDimension
         }
@@ -83,3 +71,4 @@ class QueensTableViewController: UITableViewController, ActivityPresentable {
         router.pushQueenDetails(with: viewModel.dataSource[indexPath.row])
     }
 }
+           

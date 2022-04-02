@@ -4,6 +4,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -16,6 +17,10 @@
                 <rect key="frame" x="0.0" y="0.0" width="453" height="128"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s5w-vj-35a">
+                        <rect key="frame" x="8" y="8" width="437" height="112"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tqE-Pg-8Gg">
                         <rect key="frame" x="15" y="34" width="60" height="60"/>
                         <constraints>
@@ -38,10 +43,14 @@
                 <constraints>
                     <constraint firstItem="tqE-Pg-8Gg" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="283-KZ-YjO"/>
                     <constraint firstAttribute="bottom" secondItem="pxd-7v-J9S" secondAttribute="bottom" constant="20" symbolic="YES" id="8Rc-Jj-wGs"/>
+                    <constraint firstAttribute="trailing" secondItem="s5w-vj-35a" secondAttribute="trailing" constant="8" id="EU6-iK-Q1R"/>
+                    <constraint firstAttribute="bottom" secondItem="s5w-vj-35a" secondAttribute="bottom" constant="8" id="HSf-Ek-VUl"/>
+                    <constraint firstItem="s5w-vj-35a" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="MR0-xj-gbL"/>
                     <constraint firstItem="tqE-Pg-8Gg" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="b0U-rD-IW0"/>
                     <constraint firstItem="pxd-7v-J9S" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" symbolic="YES" id="iZG-B4-FZX"/>
                     <constraint firstAttribute="trailing" secondItem="pxd-7v-J9S" secondAttribute="trailing" constant="20" symbolic="YES" id="lxG-PT-PFq"/>
                     <constraint firstItem="pxd-7v-J9S" firstAttribute="leading" secondItem="tqE-Pg-8Gg" secondAttribute="trailing" constant="8" symbolic="YES" id="shk-8L-7TY"/>
+                    <constraint firstItem="s5w-vj-35a" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="x9V-6h-wM2"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
@@ -52,4 +61,9 @@
             <point key="canvasLocation" x="-160.1449275362319" y="-35.491071428571423"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

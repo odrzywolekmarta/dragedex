@@ -21,5 +21,4 @@ class SingleSeasonTableViewCell: UITableViewCell {
         }
         seasonNumberLabel.text = model.seasonNumber
     }
-    
 }

@@ -25,7 +25,7 @@ class MainTabBarController: UITabBarController {
         let seasonsViewModel = MockSeasonsViewModel()
         let seasonsNavigationController = UINavigationController()
         let seasonsTabRouter = TabRouter(navigationController: seasonsNavigationController)
-        let seasonsController = SeasonsTableViewController(viewmodel: seasonsViewModel,
+        let seasonsController = SeasonsTableViewController(viewModel: seasonsViewModel,
                                                            router: seasonsTabRouter)
         seasonsNavigationController.setViewControllers([seasonsController], animated: false)
         
@@ -34,7 +34,6 @@ class MainTabBarController: UITabBarController {
         let favouritesNavigationController = UINavigationController(rootViewController: favouritesController)
         
         viewControllers = [queensNavigationController, seasonsNavigationController, favouritesNavigationController]
-        
     }
     
     func configureTabBarItems() {

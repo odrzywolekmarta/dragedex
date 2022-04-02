@@ -17,6 +17,10 @@ class SingleQueenTableViewCell: UITableViewCell {
         super.awakeFromNib()
     }
     
+    override func setSelected(_ selected: Bool, animated: Bool) {
+        super.setSelected(selected, animated: animated)
+    }
+    
     func configure(with model: QueenModel?) {
         guard let model = model else {
             return
@@ -27,6 +31,7 @@ class SingleQueenTableViewCell: UITableViewCell {
             latestImageLoadingOperationKey = queenImageView.sd_latestOperationKey
         }
         nameLabel.text = model.name
+        
     }
     
 }
