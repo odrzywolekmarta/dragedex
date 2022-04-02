@@ -8,7 +8,8 @@
 import UIKit
 
 class SingleEpisodeTableViewCell: UITableViewCell {
-
+    @IBOutlet var episodeLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -18,5 +19,6 @@ class SingleEpisodeTableViewCell: UITableViewCell {
         guard let model = model else {
             return
         }
+        episodeLabel.text = "\(model.episodeInSeason). \(model.title)"
     }
 }

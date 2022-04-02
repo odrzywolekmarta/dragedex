@@ -18,5 +18,6 @@ class SingleChallengeTableViewCell: UITableViewCell {
         guard let model = model else {
             return
         }
+        textLabel?.text = model.description
     }
 }

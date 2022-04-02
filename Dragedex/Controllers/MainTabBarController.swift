@@ -29,11 +29,29 @@ class MainTabBarController: UITabBarController {
                                                            router: seasonsTabRouter)
         seasonsNavigationController.setViewControllers([seasonsController], animated: false)
         
-        let favouritesController = FavouritesViewController(nibName: String(describing: FavouritesViewController.self),
-                                                            bundle: nil)
-        let favouritesNavigationController = UINavigationController(rootViewController: favouritesController)
+        let lipsyncViewModel = MockLipsyncsViewModel()
+        let lipsyncsNavigationController = UINavigationController()
+        let lipsyncsTabRouter = TabRouter(navigationController: lipsyncsNavigationController)
+        let lipsyncsController = LipsyncsTableViewController(viewModel: lipsyncViewModel, router: lipsyncsTabRouter)
+        lipsyncsNavigationController.setViewControllers([lipsyncsController], animated: false)
         
-        viewControllers = [queensNavigationController, seasonsNavigationController, favouritesNavigationController]
+        let episodesViewModel = MockEpisodesViewModel()
+        let episodesNavigationcontroller = UINavigationController()
+        let episodesTabRouter = TabRouter(navigationController: episodesNavigationcontroller)
+        let episodesController = EpisodesTableViewController(viewModel: episodesViewModel, router: episodesTabRouter)
+        episodesNavigationcontroller.setViewControllers([episodesController], animated: false)
+        
+        let challengesViewModel = MockChallengesViewModel()
+        let challengesNavigationController = UINavigationController()
+        let challengesTabRouter = TabRouter(navigationController: challengesNavigationController)
+        let challengesController = ChallengesTableViewController(viewModel: challengesViewModel, router: challengesTabRouter)
+        challengesNavigationController.setViewControllers([challengesController], animated: false)
+        
+        viewControllers = [queensNavigationController,
+                           seasonsNavigationController,
+                           lipsyncsNavigationController,
+                           episodesNavigationcontroller,
+                           challengesNavigationController]
     }
     
     func configureTabBarItems() {

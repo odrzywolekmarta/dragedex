@@ -19,15 +19,12 @@ import UIKit
 enum AppTab: String, CaseIterable {
     case queens
     case seasons
-    case favourites
+    case lipsyncs
+    case episodes
+    case challenges
     
     var imageName: String {
-        switch self {
-        case .queens, .favourites:
-            return "folder"
-        case .seasons:
-            return "folder.fill"
-        }
+        "folder"
     }
     
     var image: UIImage? {

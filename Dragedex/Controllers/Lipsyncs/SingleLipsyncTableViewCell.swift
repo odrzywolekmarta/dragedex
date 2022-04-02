@@ -18,6 +18,7 @@ class SingleLipsyncTableViewCell: UITableViewCell {
         guard let model = model else {
             return
         }
+        textLabel?.text = model.artist
     }
     
 }
