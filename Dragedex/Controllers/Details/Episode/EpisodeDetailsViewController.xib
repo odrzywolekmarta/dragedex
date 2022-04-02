@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EpisodeDetailsViewController" customModule="Dragedex" customModuleProvider="target">
+            <connections>
+                <outlet property="challengesButton" destination="YLQ-F1-S5F" id="7cC-mg-0j0"/>
+                <outlet property="lipsyncsButton" destination="D1H-1e-mFn" id="d6c-Sz-LrT"/>
+                <outlet property="titleLabel" destination="xD2-vk-j1h" id="d2T-2t-WEV"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="ulz-cS-KAx">
+                    <rect key="frame" x="169" y="385" width="76" height="126.5"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xD2-vk-j1h">
+                            <rect key="frame" x="0.0" y="0.0" width="76" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YLQ-F1-S5F">
+                            <rect key="frame" x="0.0" y="43.5" width="76" height="30"/>
+                            <state key="normal" title="Challenges"/>
+                            <connections>
+                                <action selector="challengesButtonTapped:" destination="-1" eventType="touchUpInside" id="Yjc-G0-GC2"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D1H-1e-mFn">
+                            <rect key="frame" x="0.0" y="96.5" width="76" height="30"/>
+                            <state key="normal" title="Lipsyncs"/>
+                            <connections>
+                                <action selector="lipsyncsButtonTapped:" destination="-1" eventType="touchUpInside" id="kud-Nc-NGF"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="ulz-cS-KAx" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="8rw-Ug-vla"/>
+                <constraint firstItem="ulz-cS-KAx" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="q1B-Zp-Kpb"/>
+            </constraints>
+            <point key="canvasLocation" x="68" y="68"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -13,8 +13,7 @@ protocol QueenDetailsViewModelProtocol {
     func getAdditionalQueenData(completion: (Result<QueenModel, Error>) -> Void)
 }
 
-class QueenDetailsViewModel:
-    QueenDetailsViewModelProtocol {
+class QueenDetailsViewModel: QueenDetailsViewModelProtocol {
     var model: QueenModel
     init(with model: QueenModel) {
         self.model = model
@@ -39,7 +38,7 @@ class QueenDetailsViewController: UIViewController {
          router: TabRouterProtocol) {
         self.viewModel = viewModel
         self.router = router
-        super.init(nibName: String(describing: QueenDetailsViewController.self), bundle: nil)
+        super.init(nibName: String(describing: Self.self), bundle: nil)
     }
     
     required init?(coder: NSCoder) {
