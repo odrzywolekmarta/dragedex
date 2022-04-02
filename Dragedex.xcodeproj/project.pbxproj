@@ -29,6 +29,7 @@
 		2D53D72527F8B08100CDC94B /* LipsyncsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D53D72427F8B08100CDC94B /* LipsyncsTableViewController.swift */; };
 		2D53D72B27F8B09D00CDC94B /* SingleLipsyncTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D53D72927F8B09D00CDC94B /* SingleLipsyncTableViewCell.swift */; };
 		2D53D72C27F8B09D00CDC94B /* SingleLipsyncTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D53D72A27F8B09D00CDC94B /* SingleLipsyncTableViewCell.xib */; };
+		2D53D73227F8CA7F00CDC94B /* UIView+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D53D73127F8CA7F00CDC94B /* UIView+extensions.swift */; };
 		2D55905127EBBCE800FBD152 /* TestQueen.json in Resources */ = {isa = PBXBuildFile; fileRef = 2D33108427E926ED00A2021A /* TestQueen.json */; };
 		2D55906027F2466400FBD152 /* TestAllSeasons.json in Sources */ = {isa = PBXBuildFile; fileRef = 2D55905F27F2466400FBD152 /* TestAllSeasons.json */; };
 		2D55906D27F247F700FBD152 /* TestAllSeasons.json in Resources */ = {isa = PBXBuildFile; fileRef = 2D55905F27F2466400FBD152 /* TestAllSeasons.json */; };
@@ -91,6 +92,7 @@
 		2D53D72427F8B08100CDC94B /* LipsyncsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LipsyncsTableViewController.swift; sourceTree = "<group>"; };
 		2D53D72927F8B09D00CDC94B /* SingleLipsyncTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleLipsyncTableViewCell.swift; sourceTree = "<group>"; };
 		2D53D72A27F8B09D00CDC94B /* SingleLipsyncTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SingleLipsyncTableViewCell.xib; sourceTree = "<group>"; };
+		2D53D73127F8CA7F00CDC94B /* UIView+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+extensions.swift"; sourceTree = "<group>"; };
 		2D55905F27F2466400FBD152 /* TestAllSeasons.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = TestAllSeasons.json; sourceTree = "<group>"; };
 		2D55907227F4BA7600FBD152 /* SingleSeasonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleSeasonTableViewCell.swift; sourceTree = "<group>"; };
 		2D55907327F4BA7600FBD152 /* SingleSeasonTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SingleSeasonTableViewCell.xib; sourceTree = "<group>"; };
@@ -182,6 +184,14 @@
 			path = SeasonDetails;
 			sourceTree = "<group>";
 		};
+		2D53D73027F8CA5F00CDC94B /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				2D53D73127F8CA7F00CDC94B /* UIView+extensions.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		2D55905B27F237D000FBD152 /* QueensList */ = {
 			isa = PBXGroup;
 			children = (
@@ -235,6 +245,7 @@
 		2DC306E627E90E100061D641 /* Dragedex */ = {
 			isa = PBXGroup;
 			children = (
+				2D53D73027F8CA5F00CDC94B /* Utilities */,
 				2D55909727F61C7A00FBD152 /* ActivityPresentable.swift */,
 				2D115E0B27EBA83B00D8A6B5 /* Navigation */,
 				2D3310CF27EB8CE600A2021A /* Mocks */,
@@ -453,6 +464,7 @@
 				2D55908D27F4D25B00FBD152 /* MockSeasonsViewModel.swift in Sources */,
 				2D55906027F2466400FBD152 /* TestAllSeasons.json in Sources */,
 				2D33109127EA3A8400A2021A /* TabBarItems.swift in Sources */,
+				2D53D73227F8CA7F00CDC94B /* UIView+extensions.swift in Sources */,
 				2D3310DA27EBA52000A2021A /* MockQueensViewModel.swift in Sources */,
 				2D115E0D27EBA87400D8A6B5 /* TabRouter.swift in Sources */,
 				2DC3072D27E914090061D641 /* QueenDetailsViewController.swift in Sources */,

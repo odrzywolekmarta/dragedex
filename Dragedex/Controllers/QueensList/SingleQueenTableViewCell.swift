@@ -10,11 +10,14 @@ import UIKit
 class SingleQueenTableViewCell: UITableViewCell {
     @IBOutlet var queenImageView: UIImageView!
     @IBOutlet var nameLabel: UILabel!
+    @IBOutlet var containerView: UIView!
     
     private var latestImageLoadingOperationKey: String?
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        containerView.applyShadow(cornerRadius: 8)
+        queenImageView.makeRound()
     }
     
     override func setSelected(_ selected: Bool, animated: Bool) {

@@ -42,6 +42,8 @@ class QueensTableViewController: UITableViewController {
     func configureTableView() {
         let cellName = String(describing: SingleQueenTableViewCell.self)
         tableView.register(UINib(nibName: cellName, bundle: Bundle.main), forCellReuseIdentifier: cellName)
+        tableView.backgroundColor = .white
+        tableView.separatorStyle = .none
     }
     
     override func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -62,6 +64,7 @@ class QueensTableViewController: UITableViewController {
         if let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: SingleQueenTableViewCell.self),
                                                     for: indexPath) as? SingleQueenTableViewCell {
             cell.configure(with: viewModel.dataSource[indexPath.row])
+            cell.backgroundColor = .clear
             return cell
         }
         return SingleQueenTableViewCell()
