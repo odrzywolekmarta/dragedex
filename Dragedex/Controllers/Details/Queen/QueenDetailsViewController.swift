@@ -49,6 +49,11 @@ class QueenDetailsViewController: UIViewController {
         doConfiguration()
     }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        navigationController?.navigationBar.barTintColor = .none
+        navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor:UIColor.black]
+    }
+    
     func doConfiguration() {
         updateUI(with: viewModel.model)
         queensImageView.makeRound()
@@ -58,6 +63,27 @@ class QueenDetailsViewController: UIViewController {
         episodesButton.addTarget(self, action: #selector(episodesButtonTapped), for: .touchUpInside)
         challengesButton.addTarget(self, action: #selector(challengesButtonTapped), for: .touchUpInside)
         lipsyncsButton.addTarget(self, action: #selector(lipsyncsButtonTapped), for: .touchUpInside)
+        let detailsBackgroundColor = queensImageView.image?.averageColor
+        view.backgroundColor = detailsBackgroundColor
+        let barColor = view.backgroundColor?.lighter()
+        navigationController?.navigationBar.barTintColor = barColor
+        let barItemsColor = navigationController?.navigationBar.barTintColor?.inverted
+        navigationController?.navigationBar.tintColor = barItemsColor
+        navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor:barItemsColor ?? .black]
+        let buttonColor = view.backgroundColor?.adjustBrightness()
+        episodesButton.backgroundColor = buttonColor
+        challengesButton.backgroundColor = buttonColor
+        lipsyncsButton.backgroundColor = buttonColor
+        episodesButton.tintColor = buttonColor?.inverted
+        challengesButton.tintColor = buttonColor?.inverted
+        lipsyncsButton.tintColor = buttonColor?.inverted
+        episodesButton.layer.cornerRadius = 23
+        challengesButton.layer.cornerRadius = 23
+        lipsyncsButton.layer.cornerRadius = 23
+        episodesButton.applyShadow()
+        challengesButton.applyShadow()
+        lipsyncsButton.applyShadow()
+        
     }
     
     @objc func episodesButtonTapped() {
@@ -86,8 +112,8 @@ class QueenDetailsViewController: UIViewController {
     func updateUI(with model: QueenModel) {
         quoteLabel.text = "\"\(model.quote)\""
         title = model.name
-        let color = UIColor.lightGray
-        view.backgroundColor = color
+//        let color = UIColor.lightGray
+//        view.backgroundColor = color
         
         if let seasonsNumbers = model.seasonsDescription {
             seasonsLabel.text = seasonsNumbers
@@ -105,7 +131,6 @@ class QueenDetailsViewController: UIViewController {
             queensImageView.sd_setImage(with: URL(string: urlString),
                                         placeholderImage: nil)
         }
-        
     }
     
     func handle(error: Error) {

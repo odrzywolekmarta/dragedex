@@ -33,7 +33,7 @@ class QueensTableViewController: UITableViewController {
         configureTableView()
         reloadData()
     }
-    
+
     func reloadData() {
         viewModel.updateDataSource()
         tableView.reloadData()
@@ -44,6 +44,7 @@ class QueensTableViewController: UITableViewController {
         tableView.register(UINib(nibName: cellName, bundle: Bundle.main), forCellReuseIdentifier: cellName)
         tableView.backgroundColor = .white
         tableView.separatorStyle = .none
+        navigationItem.title = "Queens"
     }
     
     override func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
