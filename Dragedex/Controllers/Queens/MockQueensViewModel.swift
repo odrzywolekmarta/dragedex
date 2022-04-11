@@ -8,6 +8,8 @@
 import Foundation
 
 class MockQueensViewModel: QueensViewModelProtocol {
+    var delegate: QueensViewModelDelegate?
+    
     var dataSource: [QueenModel] = []
     
     func updateDataSource() {

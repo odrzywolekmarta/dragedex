@@ -16,7 +16,7 @@ class MainTabBarController: UITabBarController {
     }
     
     func configureControllers() {
-        let queensViewModel = MockQueensViewModel()
+        let queensViewModel = QueensViewModel()
         let queensNavigationController = UINavigationController()
         let queensTabRouter = TabRouter(navigationController: queensNavigationController)
         let queensController = QueensTableViewController(viewModel: queensViewModel, router: queensTabRouter)

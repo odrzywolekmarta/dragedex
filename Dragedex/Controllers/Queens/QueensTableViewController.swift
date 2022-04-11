@@ -8,13 +8,36 @@
 import UIKit
 
 protocol QueensViewModelProtocol {
+    var delegate: QueensViewModelDelegate? { get set }
     var dataSource: [QueenModel] { get }
     func updateDataSource()
 }
 
+protocol QueensViewModelDelegate: AnyObject {
+    func onDataSourceUpdate(error: Error?)
+}
+
+class QueensViewModel: QueensViewModelProtocol {
+    weak var delegate: QueensViewModelDelegate?
+    let service = QueensAPIService()
+    var dataSource: [QueenModel] = []
+    
+    func updateDataSource() {
+        service.getAllQueens { [weak self] result in
+            switch result {
+            case .success(let models):
+                self?.dataSource = models
+                self?.delegate?.onDataSourceUpdate(error: nil)
+            case .failure(let error):
+                self?.delegate?.onDataSourceUpdate(error: error)
+            }
+        }
+    }
+}
+
 class QueensTableViewController: UITableViewController {
     
-    let viewModel: QueensViewModelProtocol
+    var viewModel: QueensViewModelProtocol
     let router: TabRouterProtocol
     
     init(viewModel: QueensViewModelProtocol,
@@ -31,12 +54,8 @@ class QueensTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configureTableView()
-        reloadData()
-    }
-
-    func reloadData() {
         viewModel.updateDataSource()
-        tableView.reloadData()
+        viewModel.delegate = self
     }
     
     func configureTableView() {
@@ -75,4 +94,15 @@ class QueensTableViewController: UITableViewController {
         router.pushQueenDetails(with: viewModel.dataSource[indexPath.row])
     }
 }
-           
+
+extension QueensTableViewController: QueensViewModelDelegate {
+    func onDataSourceUpdate(error: Error?) {
+        if let error = error {
+            // handle error
+        } else {
+            DispatchQueue.main.async {
+                self.tableView.reloadData()
+            }
+        }
+    }
+}
