@@ -97,10 +97,10 @@ class QueensTableViewController: UITableViewController {
 
 extension QueensTableViewController: QueensViewModelDelegate {
     func onDataSourceUpdate(error: Error?) {
-        if let error = error {
-            // handle error
-        } else {
-            DispatchQueue.main.async {
+        DispatchQueue.main.async {
+            if let error = error {
+                self.presentAlert(with: error)
+            } else {
                 self.tableView.reloadData()
             }
         }
