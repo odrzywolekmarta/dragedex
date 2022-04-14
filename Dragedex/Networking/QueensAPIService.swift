@@ -56,8 +56,30 @@ class QueensAPIService {
         dataTask?.resume()
     }
     
-    func getQueen(forId id: Int, completion: (Result<QueenModel, Error>) -> Void) {
-        
+    func getQueen(forId id: Int, completion: @escaping (Result<QueenModel, Error>) -> Void) {
+        let urlString = "\(kBaseUrl)/\(kQueens)/\(id)"
+        guard let url = URL(string: urlString) else {
+            completion(.failure(QueensAPIError.couldNotCreateUrl))
+            return
+        }
+        let urlSession = getSession()
+        dataTask = urlSession.dataTask(with: url, completionHandler: { (data, response, error) in
+            if let error = error {
+                completion(.failure(error))
+            } else if let data = data {
+                let decoder = JSONDecoder()
+                decoder.keyDecodingStrategy = .convertFromSnakeCase
+                do {
+                    let model = try decoder.decode(QueenModel.self, from: data)
+                    completion(.success(model))
+                } catch {
+                    completion(.failure(error))
+                }
+            } else {
+                completion(.failure(QueensAPIError.unknown))
+            }
+        })
+        dataTask?.resume()
     }
     
     func getEpisodes(forQueenId queenId: Int, completion: (Result<[EpisodeModel], Error>) -> Void) {

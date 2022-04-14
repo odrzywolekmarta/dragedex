@@ -12,6 +12,13 @@ protocol LipsyncsViewModelProtocol {
     func updateDataSource()
 }
 
+struct StaticDataLipsyncsViewModel: LipsyncsViewModelProtocol {
+    let dataSource: [LipSyncModel]
+    func updateDataSource() {
+        // static data, nothing to do here
+    }
+}
+
 class LipsyncsTableViewController: UITableViewController {
     
     let viewModel: LipsyncsViewModelProtocol

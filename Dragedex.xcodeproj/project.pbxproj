@@ -232,10 +232,10 @@
 		2D53D73E27F8CC0100CDC94B /* Episodes */ = {
 			isa = PBXGroup;
 			children = (
-				2D53D75D27F8D6ED00CDC94B /* MockEpisodesViewModel.swift */,
 				2D53D70527F89FC500CDC94B /* EpisodesTableViewController.swift */,
 				2D53D70D27F8A25F00CDC94B /* SingleEpisodeTableViewCell.swift */,
 				2D53D70E27F8A25F00CDC94B /* SingleEpisodeTableViewCell.xib */,
+				2D53D75D27F8D6ED00CDC94B /* MockEpisodesViewModel.swift */,
 			);
 			path = Episodes;
 			sourceTree = "<group>";

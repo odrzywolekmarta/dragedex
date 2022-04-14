@@ -12,6 +12,13 @@ protocol EpisodesViewModelProtocol {
     func updateDataSource()
 }
 
+struct StaticDataEpisodesViewModel: EpisodesViewModelProtocol {
+    let dataSource: [EpisodeModel]
+    func updateDataSource() {
+        // static data, nothing to do here
+    }
+}
+
 class EpisodesTableViewController: UITableViewController {
     
     let viewModel: EpisodesViewModelProtocol

@@ -15,7 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let provider = MockDataProvider()
         do {
             let seasons = try provider.getTestLipsyncs()
-            print(seasons)
+//            print(seasons)
         } catch {
             print(error)
         }

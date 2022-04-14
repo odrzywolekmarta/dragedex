@@ -10,15 +10,25 @@ import SDWebImage
 
 protocol QueenDetailsViewModelProtocol {
     var model: QueenModel { get }
-    func getAdditionalQueenData(completion: (Result<QueenModel, Error>) -> Void)
+    func getAdditionalQueenData(completion: @escaping (Result<QueenModel, Error>) -> Void)
 }
 
 class QueenDetailsViewModel: QueenDetailsViewModelProtocol {
     var model: QueenModel
+    private let service = QueensAPIService()
     init(with model: QueenModel) {
         self.model = model
     }
-    func getAdditionalQueenData(completion: (Result<QueenModel, Error>) -> Void) {
+    func getAdditionalQueenData(completion: @escaping (Result<QueenModel, Error>) -> Void) {
+        service.getQueen(forId: model.id) { [weak self] result in
+            self?.updateModel(with: result)
+            completion(result)
+        }
+    }
+    private func updateModel(with result: Result<QueenModel, Error>) {
+        if let model = try? result.get() {
+            self.model = model
+        }
     }
 }
 
@@ -47,6 +57,7 @@ class QueenDetailsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         doConfiguration()
+        fetchAdditionalQueenData()
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -99,12 +110,14 @@ class QueenDetailsViewController: UIViewController {
     }
     
     func fetchAdditionalQueenData() {
-        viewModel.getAdditionalQueenData { result in
-            switch result {
-            case .success(let model):
-                updateUI(with: model)
-            case .failure(let error):
-                handle(error: error)
+        viewModel.getAdditionalQueenData { [weak self] result in
+            DispatchQueue.main.async {
+                switch result {
+                case .success(let model):
+                    self?.updateUI(with: model)
+                case .failure(let error):
+                    self?.handle(error: error)
+                }
             }
         }
     }
@@ -126,6 +139,10 @@ class QueenDetailsViewController: UIViewController {
         } else {
             winnerLabel.isHidden = true
         }
+        
+        episodesButton.isEnabled = (model.episodes != nil)
+        challengesButton.isEnabled = (model.challenges != nil)
+        lipsyncsButton.isEnabled = (model.lipsyncs != nil)
         
         if let urlString = model.imageUrl {
             queensImageView.sd_setImage(with: URL(string: urlString),

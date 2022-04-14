@@ -11,6 +11,13 @@ protocol ChallengesViewModelProtocol {
     var dataSource: [ChallengeModel] { get }
     func updateDataSource()
 }
+struct StaticDataChallengesViewModel: ChallengesViewModelProtocol {
+    let dataSource: [ChallengeModel]
+    func updateDataSource() {
+        // static data, nothing to do here
+    }
+}
+
 class ChallengesTableViewController: UITableViewController {
     
     let viewModel: ChallengesViewModelProtocol

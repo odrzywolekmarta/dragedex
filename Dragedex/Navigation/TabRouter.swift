@@ -32,7 +32,7 @@ class TabRouter: TabRouterProtocol {
     }
     
     func pushEpisodes(with model: QueenModel) {
-        let viewModel = MockEpisodesViewModel()
+        let viewModel = StaticDataEpisodesViewModel(dataSource: model.episodes ?? [])
         let episodesController = EpisodesTableViewController(viewModel: viewModel,
                                                              router: self)
         navigationController.pushViewController(episodesController, animated: true)
@@ -60,14 +60,14 @@ class TabRouter: TabRouterProtocol {
     }
     
     func pushChallenges(with model: QueenModel) {
-        let viewModel = MockChallengesViewModel()
+        let viewModel = StaticDataChallengesViewModel(dataSource: model.challenges ?? [])
         let challengesController = ChallengesTableViewController(viewModel: viewModel,
                                                                  router: self)
         navigationController.pushViewController(challengesController, animated: true)
     }
     
     func pushLipsyncs(with model: QueenModel) {
-        let viewModel = MockLipsyncsViewModel()
+        let viewModel = StaticDataLipsyncsViewModel(dataSource: model.lipsyncs ?? [])
         let lipsyncsController = LipsyncsTableViewController(viewModel: viewModel,
                                                              router: self)
         navigationController.pushViewController(lipsyncsController, animated: true)
