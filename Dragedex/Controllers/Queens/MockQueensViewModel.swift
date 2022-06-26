@@ -8,6 +8,10 @@
 import Foundation
 
 class MockQueensViewModel: QueensViewModelProtocol {
+    func shouldDisplaySpoilers() -> Bool {
+        false
+    }
+    
     var delegate: QueensViewModelDelegate?
     
     var dataSource: [QueenModel] = []

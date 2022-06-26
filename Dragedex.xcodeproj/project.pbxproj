@@ -52,6 +52,7 @@
 		2D55909827F61C7A00FBD152 /* ActivityPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D55909727F61C7A00FBD152 /* ActivityPresentable.swift */; };
 		2D86E4D327E91F4200646382 /* FavouritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D86E4D127E91F4200646382 /* FavouritesViewController.swift */; };
 		2D86E4D427E91F4200646382 /* FavouritesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D86E4D227E91F4200646382 /* FavouritesViewController.xib */; };
+		2DB928DB2868B20200420A91 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB928DA2868B20200420A91 /* Constants.swift */; };
 		2DC306E827E90E100061D641 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC306E727E90E100061D641 /* AppDelegate.swift */; };
 		2DC306EA27E90E100061D641 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC306E927E90E100061D641 /* SceneDelegate.swift */; };
 		2DC306EC27E90E100061D641 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC306EB27E90E100061D641 /* ViewController.swift */; };
@@ -124,6 +125,7 @@
 		2D55909727F61C7A00FBD152 /* ActivityPresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityPresentable.swift; sourceTree = "<group>"; };
 		2D86E4D127E91F4200646382 /* FavouritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesViewController.swift; sourceTree = "<group>"; };
 		2D86E4D227E91F4200646382 /* FavouritesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavouritesViewController.xib; sourceTree = "<group>"; };
+		2DB928DA2868B20200420A91 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		2DC306E427E90E100061D641 /* Dragedex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dragedex.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DC306E727E90E100061D641 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2DC306E927E90E100061D641 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -206,6 +208,7 @@
 				2D53D73127F8CA7F00CDC94B /* UIView+extensions.swift */,
 				2D53D79227FB5C1700CDC94B /* CustomButton.swift */,
 				2D53D7A32808A2D400CDC94B /* UIViewController+AlertPresentable.swift */,
+				2DB928DA2868B20200420A91 /* Constants.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -537,6 +540,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2D3310D127EB8D0E00A2021A /* MockDataProvider.swift in Sources */,
+				2DB928DB2868B20200420A91 /* Constants.swift in Sources */,
 				2D53D70627F89FC500CDC94B /* EpisodesTableViewController.swift in Sources */,
 				2D3310A727EA5B0700A2021A /* TestAllQueens.json in Sources */,
 				2D33108027E9212D00A2021A /* QueenModel.swift in Sources */,

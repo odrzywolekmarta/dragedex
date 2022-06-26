@@ -11,6 +11,7 @@ protocol QueensViewModelProtocol {
     var delegate: QueensViewModelDelegate? { get set }
     var dataSource: [QueenModel] { get }
     func updateDataSource()
+    func shouldDisplaySpoilers() -> Bool
 }
 
 protocol QueensViewModelDelegate: AnyObject {
@@ -18,6 +19,10 @@ protocol QueensViewModelDelegate: AnyObject {
 }
 
 class QueensViewModel: QueensViewModelProtocol {
+    func shouldDisplaySpoilers() -> Bool {
+        UserDefaults.standard.bool(forKey: Constants.kShouldDisplaySpoilers)
+    }
+    
     weak var delegate: QueensViewModelDelegate?
     let service = QueensAPIService()
     var dataSource: [QueenModel] = []
@@ -54,6 +59,7 @@ class QueensTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configureTableView()
+        configureNavigationBar()
         viewModel.updateDataSource()
         viewModel.delegate = self
     }
@@ -64,6 +70,28 @@ class QueensTableViewController: UITableViewController {
         tableView.backgroundColor = .white
         tableView.separatorStyle = .none
         navigationItem.title = "Queens"
+    }
+    
+    func configureNavigationBar() {
+        let spoilersLabel = UILabel()
+        spoilersLabel.font = UIFont.boldSystemFont(ofSize: UIFont.smallSystemFontSize)
+        spoilersLabel.text = "spoilers"
+        spoilersLabel.textColor = .gray
+        
+        let toggle = UISwitch()
+        toggle.addTarget(self, action: #selector(toggleValueChanged(_:)), for: .valueChanged)
+        toggle.onTintColor = .systemPink
+        toggle.isOn = viewModel.shouldDisplaySpoilers()
+        
+        let stackView = UIStackView(arrangedSubviews: [spoilersLabel,toggle])
+        stackView.spacing = 8
+        navigationItem.rightBarButtonItem = UIBarButtonItem(customView: stackView)
+    }
+    
+    @objc func toggleValueChanged(_ toggle: UISwitch) {
+        let shouldDisplaySpoilers = toggle.isOn
+        UserDefaults.standard.set(shouldDisplaySpoilers, forKey: Constants.kShouldDisplaySpoilers)
+        tableView.reloadData()
     }
     
     override func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -83,7 +111,7 @@ class QueensTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: SingleQueenTableViewCell.self),
                                                     for: indexPath) as? SingleQueenTableViewCell {
-            cell.configure(with: viewModel.dataSource[indexPath.row])
+            cell.configure(with: viewModel.dataSource[indexPath.row], shouldDisplaySpoilers: viewModel.shouldDisplaySpoilers())
             cell.backgroundColor = .clear
             return cell
         }
